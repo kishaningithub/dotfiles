@@ -185,8 +185,6 @@ brew "k6"
 brew "kcat"
 # Network authentication protocol
 brew "krb5"
-# Kubernetes command-line interface
-brew "kubernetes-cli", link: false
 # Common error values for all GnuPG components
 brew "libgpg-error"
 # Cryptographic library based on the code from GnuPG
@@ -408,55 +406,5 @@ cask "xquartz"
 # Video communication and virtual meeting platform
 cask "zoom"
 
-## Previously used but currently unused
-# tap "cockroachdb/tap"
-# tap "goreleaser/tap"
-# tap "kyoh86/tap"
-# tap "mingrammer/flog"
-# tap "potatolabs/git-redate"
-# tap "teamookla/speedtest"
-# tap "thecasualcoder/stable"
-# tap "tylerbrock/saw"
-# # Rich-Go will enrich `go test` outputs with text decorations
-# brew "kyoh86/tap/richgo"
-# tap "habitat-sh/habitat"
-# brew "fluent-bit"
-# brew "grafana", restart_service: true
-# brew "kafka", restart_service: true
-# brew "prometheus", restart_service: true
-# brew "qcachegrind"
-# brew "redis", restart_service: true
-# brew "stunnel", restart_service: true # Originally used for making redis connect via tls, now redis cli supports tls
-# brew "the_silver_searcher"
-# brew "travis"
-# brew "vegeta"
-# brew "watson"
-# brew "cockroachdb/tap/cockroach"
-# brew "goreleaser/tap/goreleaser"
-# brew "hashicorp/tap/vault"
-# brew "mike-engel/jwt-cli/jwt-cli"
-# brew "mingrammer/flog/flog"
-# brew "potatolabs/git-redate/git-redate"
-# brew "rs/tap/jaggr"
-# brew "rs/tap/jplot"
-# brew "saulpw/vd/visidata"
-# brew "teamookla/speedtest/speedtest"
-# brew "thecasualcoder/stable/gg"
-# brew "tomanthony/brews/itermocil"
-# brew "tylerbrock/saw/saw"
-# cask "android-studio"
-# cask "background-music" # Changes default audio output and helps control volume of various apps.
-# cask "flutter" # Not using it
-# cask "flycut" # clip board manager Not very pleased with this one
-# cask "jumpcut" # clip board manager Not very pleased with this one
-# cask "licecap" # Good screen capturer using gif
-# cask "mysqlworkbench" # Not actively using it
-# cask "owasp-zap"
-# cask "postman"
-# cask "skype"
-# cask "sublime-text"
-# cask "superproductivity" # Useful todo list app but not an active user
-# cask "teamviewer"
-# cask "vagrant"
-# cask "virtualbox"
-# cask "xmind"
+# Kubernetes command-line interface
+brew "kubernetes-cli", link: false

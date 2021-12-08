@@ -1,0 +1,55 @@
+## Previously used but currently unused.
+## Holding this list because i might forget an useful tool
+## if i am not using it for a while
+
+# # Rich-Go will enrich `go test` outputs with text decorations
+# brew "cockroachdb/tap/cockroach"
+# brew "fluent-bit"
+# brew "goreleaser/tap/goreleaser"
+# brew "grafana", restart_service: true
+# brew "hashicorp/tap/vault"
+# brew "kafka", restart_service: true
+# brew "kyoh86/tap/richgo"
+# brew "mike-engel/jwt-cli/jwt-cli"
+# brew "mingrammer/flog/flog"
+# brew "potatolabs/git-redate/git-redate"
+# brew "prometheus", restart_service: true
+# brew "qcachegrind"
+# brew "redis", restart_service: true
+# brew "rs/tap/jaggr"
+# brew "rs/tap/jplot"
+# brew "saulpw/vd/visidata"
+# brew "stunnel", restart_service: true # Originally used for making redis connect via tls, now redis cli supports tls
+# brew "teamookla/speedtest/speedtest"
+# brew "the_silver_searcher"
+# brew "thecasualcoder/stable/gg"
+# brew "tomanthony/brews/itermocil"
+# brew "travis"
+# brew "tylerbrock/saw/saw"
+# brew "vegeta"
+# brew "watson"
+# cask "android-studio"
+# cask "background-music" # Changes default audio output and helps control volume of various apps.
+# cask "flutter" # Not using it
+# cask "flycut" # clip board manager Not very pleased with this one
+# cask "jumpcut" # clip board manager Not very pleased with this one
+# cask "licecap" # Good screen capturer using gif
+# cask "mysqlworkbench" # Not actively using it
+# cask "owasp-zap"
+# cask "postman"
+# cask "skype"
+# cask "sublime-text"
+# cask "superproductivity" # Useful todo list app but not an active user
+# cask "teamviewer"
+# cask "vagrant"
+# cask "virtualbox"
+# cask "xmind"
+# tap "cockroachdb/tap"
+# tap "goreleaser/tap"
+# tap "habitat-sh/habitat"
+# tap "kyoh86/tap"
+# tap "mingrammer/flog"
+# tap "potatolabs/git-redate"
+# tap "teamookla/speedtest"
+# tap "thecasualcoder/stable"
+# tap "tylerbrock/saw"
