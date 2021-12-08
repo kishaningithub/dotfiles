@@ -25,6 +25,7 @@ tap "tomanthony/brews"
 tap "tylerbrock/saw"
 
 # cli commands
+brew "age"
 brew "webp"
 brew "openssl@1.1"
 brew "aria2"
@@ -221,13 +222,12 @@ brew "kyoh86/tap/richgo"
 # brew "thecasualcoder/stable/gg"
 # brew "tomanthony/brews/itermocil"
 # brew "tylerbrock/saw/saw"
-brew "age"
 
 # GUI
 cask "adobe-acrobat-reader"
 cask "alt-tab"
 # cask "android-studio"
-# cask "background-music" # Changes default audio output and helps control volume of various apps. 
+# cask "background-music" # Changes default audio output and helps control volume of various apps.
 cask "docker"
 cask "drawio"
 cask "dropbox"
@@ -243,7 +243,7 @@ cask "jd-gui"
 cask "joplin"
 # cask "jumpcut" # clip board manager Not very pleased with this one
 cask "keepassxc"
-# cask "libreoffice" # Google docs works well most of the time
+cask "libreoffice"
 # cask "licecap" # Good screen capturer using gif
 # cask "mysqlworkbench" # Not actively using it
 cask "osxfuse"
