@@ -405,6 +405,3 @@ cask "vlc"
 cask "xquartz"
 # Video communication and virtual meeting platform
 cask "zoom"
-
-# Kubernetes command-line interface
-brew "kubernetes-cli", link: false
