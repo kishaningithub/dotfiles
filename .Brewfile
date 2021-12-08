@@ -377,6 +377,8 @@ cask "handbrake"
 cask "imageoptim"
 # Java IDE by JetBrains
 cask "intellij-idea"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
 # Standalone Java Decompiler GUI
 cask "jd-gui"
 # Note taking and to-do application with synchronization capabilities
