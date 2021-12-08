@@ -1,8 +1,6 @@
 tap "aquasecurity/trivy"
-tap "cockroachdb/tap"
 tap "dkanejs/aws-session-manager-plugin"
 tap "go-delve/delve"
-tap "goreleaser/tap"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -10,17 +8,11 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "kishaningithub/tap"
-tap "kyoh86/tap"
 tap "mike-engel/jwt-cli"
-tap "mingrammer/flog"
-tap "potatolabs/git-redate"
 tap "rs/tap"
 tap "saulpw/vd"
 tap "sonatype-nexus-community/nancy-tap"
-tap "teamookla/speedtest"
-tap "thecasualcoder/stable"
 tap "tomanthony/brews"
-tap "tylerbrock/saw"
 # Simple, modern, secure file encryption
 brew "age"
 # Image format providing lossless and lossy compression for web images
@@ -365,8 +357,6 @@ brew "kishaningithub/tap/memory-eater"
 brew "kishaningithub/tap/randomtext"
 # Download a shopify site in a csv format that the shopify importer understands
 brew "kishaningithub/tap/shopify-csv-download"
-# Rich-Go will enrich `go test` outputs with text decorations
-brew "kyoh86/tap/richgo"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
 # Enable Windows-like alt-tab
@@ -419,6 +409,16 @@ cask "xquartz"
 cask "zoom"
 
 ## Previously used but currently unused
+# tap "cockroachdb/tap"
+# tap "goreleaser/tap"
+# tap "kyoh86/tap"
+# tap "mingrammer/flog"
+# tap "potatolabs/git-redate"
+# tap "teamookla/speedtest"
+# tap "thecasualcoder/stable"
+# tap "tylerbrock/saw"
+# # Rich-Go will enrich `go test` outputs with text decorations
+# brew "kyoh86/tap/richgo"
 # tap "habitat-sh/habitat"
 # brew "fluent-bit"
 # brew "grafana", restart_service: true
