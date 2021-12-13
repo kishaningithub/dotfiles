@@ -133,6 +133,14 @@ brew "gsettings-desktop-schemas"
 brew "glib-networking"
 # Full-Featured Open-Source Framework for Image Processing
 brew "gmic"
+# Common error values for all GnuPG components
+brew "libgpg-error"
+# Cryptographic library based on the code from GnuPG
+brew "libgcrypt"
+# X.509 and CMS library
+brew "libksba"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Log analyzer and interactive viewer for the Apache Webserver
@@ -185,12 +193,6 @@ brew "k6"
 brew "kcat"
 # Network authentication protocol
 brew "krb5"
-# Common error values for all GnuPG components
-brew "libgpg-error"
-# Cryptographic library based on the code from GnuPG
-brew "libgcrypt"
-# X.509 and CMS library
-brew "libksba"
 # Postgres C API library
 brew "libpq"
 # Library for complex text layout
