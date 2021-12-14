@@ -4,6 +4,7 @@
 
 # # Rich-Go will enrich `go test` outputs with text decorations
 # brew "cockroachdb/tap/cockroach"
+# brew "consul", restart_service: true # Tool for service discovery, monitoring and configuration
 # brew "fluent-bit"
 # brew "goreleaser/tap/goreleaser"
 # brew "grafana", restart_service: true

@@ -105,8 +105,6 @@ brew "nghttp2"
 brew "cmus"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
-# Tool for service discovery, monitoring and configuration
-brew "consul", restart_service: true
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Load/unload environment variables based on $PWD
