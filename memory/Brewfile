@@ -22,6 +22,7 @@
 # brew "saulpw/vd/visidata"
 # brew "stunnel", restart_service: true # Originally used for making redis connect via tls, now redis cli supports tls
 # brew "teamookla/speedtest/speedtest"
+# brew "terraform" # Tool to build, change, and version infrastructure
 # brew "the_silver_searcher"
 # brew "thecasualcoder/stable/gg"
 # brew "tomanthony/brews/itermocil"
@@ -29,6 +30,7 @@
 # brew "tylerbrock/saw/saw"
 # brew "vegeta"
 # brew "watson"
+# brew "wrk" # HTTP benchmarking tool
 # cask "android-studio"
 # cask "background-music" # Changes default audio output and helps control volume of various apps.
 # cask "flutter" # Not using it

@@ -297,8 +297,6 @@ brew "sphinx-doc"
 brew "sqldiff"
 # User interface to the TELNET protocol
 brew "telnet"
-# Tool to build, change, and version infrastructure
-brew "terraform"
 # Enables extra languages support for Tesseract
 brew "tesseract-lang"
 # Executes SQL across text files
@@ -327,8 +325,6 @@ brew "watch"
 brew "watchman"
 # Internet file retriever
 brew "wget"
-# HTTP benchmarking tool
-brew "wrk"
 # Cross-platform C++ GUI toolkit
 brew "wxwidgets"
 # Download YouTube videos from the command-line

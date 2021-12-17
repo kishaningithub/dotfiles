@@ -2,4 +2,4 @@
 	helper = osxkeychain
 	
 [include]
-	path = ~/.gitconfig.personal
+	# path = ~/.gitconfig.personal
