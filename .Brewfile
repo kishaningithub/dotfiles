@@ -205,6 +205,8 @@ brew "libxml2"
 brew "libxslt"
 # YAML Parser
 brew "libyaml"
+# Fully functional local AWS cloud stack
+brew "localstack"
 # LZMA-based compression program similar to gzip or bzip2
 brew "lzip"
 # Platform built on V8 to build network applications
@@ -323,6 +325,8 @@ brew "w3m"
 brew "watch"
 # Watch files and take action when they change
 brew "watchman"
+# Command-line tool to track (your) time
+brew "watson"
 # Internet file retriever
 brew "wget"
 # Cross-platform C++ GUI toolkit
