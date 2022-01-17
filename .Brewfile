@@ -389,6 +389,8 @@ cask "keepassxc"
 cask "libreoffice"
 # File system integration
 cask "osxfuse"
+# IDE for Python programming - Community Edition
+cask "pycharm-ce"
 # Tool to manage the size and position of windows
 cask "shiftit"
 # Team communication and collaboration software
