@@ -19,7 +19,8 @@ if exists brew; then
 else
     echo "Installing homebrew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    echo "/opt/homebrew/bin" >> /etc/paths
+    sudo echo "/opt/homebrew/bin" >> /etc/paths
+    export PATH="$PATH:/opt/homebrew/bin"
 fi
 
 if [[ -d ~/dotfiles ]]; then
