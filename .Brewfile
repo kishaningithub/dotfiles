@@ -381,8 +381,6 @@ cask "joplin"
 cask "keepassxc"
 # Office suite
 cask "libreoffice"
-# File system integration
-cask "osxfuse"
 # IDE for professional Python development
 cask "pycharm"
 # Tool to manage the size and position of windows

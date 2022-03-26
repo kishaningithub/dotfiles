@@ -61,6 +61,8 @@
 # cask "vagrant"
 # cask "virtualbox"
 # cask "xmind"
+# File system integration
+# cask "osxfuse"
 # tap "cockroachdb/tap"
 # tap "goreleaser/tap"
 # tap "habitat-sh/habitat"
