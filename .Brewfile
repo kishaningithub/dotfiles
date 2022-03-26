@@ -282,10 +282,6 @@ brew "pv"
 brew "py-spy"
 # Implementation of Python 3 in Python
 brew "pypy3"
-# Cross-platform application and UI framework
-brew "qt"
-# Python bindings for v6 of Qt
-brew "pyqt"
 # Interpreted, interactive, object-oriented programming language
 brew "python@2", link: false
 # Search tool like grep and The Silver Searcher
