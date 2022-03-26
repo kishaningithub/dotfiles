@@ -37,6 +37,14 @@
 # brew "pyqt"
 # Cross-platform C++ GUI toolkit
 # brew "wxwidgets"
+# Implementation of Python 3 in Python
+# brew "pypy3"
+# Interpreted, interactive, object-oriented programming language
+# brew "python@2", link: false
+# Read-write NTFS driver for FUSE
+# brew "ntfs-3g"
+# GNU Compiler Collection
+# brew "gcc@4.9", link: false
 # cask "android-studio"
 # cask "background-music" # Changes default audio output and helps control volume of various apps.
 # cask "flutter" # Not using it

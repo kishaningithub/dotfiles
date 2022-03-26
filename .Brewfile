@@ -118,8 +118,6 @@ brew "folly"
 brew "fftw"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# GNU Compiler Collection
-brew "gcc@4.9", link: false
 # Toolkit for image loading and pixel buffer manipulation
 brew "gdk-pixbuf"
 # Distributed revision control system
@@ -244,8 +242,6 @@ brew "nghttp2"
 brew "nnn"
 # Libraries for security-enabled client and server applications
 brew "nss"
-# Read-write NTFS driver for FUSE
-brew "ntfs-3g"
 # Package for scientific computing with Python
 brew "numpy"
 # Manage multiple Node.js versions
@@ -280,10 +276,6 @@ brew "pulumi"
 brew "pv"
 # Sampling profiler for Python programs
 brew "py-spy"
-# Implementation of Python 3 in Python
-brew "pypy3"
-# Interpreted, interactive, object-oriented programming language
-brew "python@2", link: false
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Standard unix software packaging tool
