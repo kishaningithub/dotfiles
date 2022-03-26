@@ -18,7 +18,7 @@ if exists brew; then
     echo "homebrew already exists... skipping..."
 else
     echo "Installing homebrew..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 if [[ -d ~/dotfiles ]]; then
