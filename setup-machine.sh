@@ -20,7 +20,7 @@ else
     echo "Installing homebrew..."
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     sudo sh -c 'echo "/opt/homebrew/bin" >> /etc/paths'
-    export PATH="$PATH:/opt/homebrew/bin"
+    source ~/.zshrc
 fi
 
 if [[ -d ~/dotfiles ]]; then
