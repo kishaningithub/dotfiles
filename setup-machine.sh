@@ -7,18 +7,18 @@ exists()
   command -v "$1" >/dev/null 2>&1
 }
 
-if exists brew; then
-   echo "homebrew already exists... skipping..."
-else
-    echo "Installing homebrew..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-fi
-
 if  [[ -d ~/.oh-my-zsh ]]; then
     echo "ohmyzsh already exists... skipping..."
 else
-     echo "Installing ohmyzsh..."
+    echo "Installing ohmyzsh..."
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+
+if exists brew; then
+    echo "homebrew already exists... skipping..."
+else
+    echo "Installing homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 if [[ -d ~/dotfiles ]]; then
