@@ -35,6 +35,8 @@
 # brew "qt"
 # Python bindings for v6 of Qt
 # brew "pyqt"
+# Cross-platform C++ GUI toolkit
+# brew "wxwidgets"
 # cask "android-studio"
 # cask "background-music" # Changes default audio output and helps control volume of various apps.
 # cask "flutter" # Not using it

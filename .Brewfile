@@ -334,8 +334,6 @@ brew "watch"
 brew "watson"
 # Internet file retriever
 brew "wget"
-# Cross-platform C++ GUI toolkit
-brew "wxwidgets"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 # Process YAML documents from the CLI
