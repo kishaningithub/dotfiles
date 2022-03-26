@@ -18,8 +18,8 @@ if exists brew; then
     echo "homebrew already exists... skipping..."
 else
     echo "Installing homebrew..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    sudo echo "/opt/homebrew/bin" >> /etc/paths
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    sudo sh -c 'echo "/opt/homebrew/bin" >> /etc/paths'
     export PATH="$PATH:/opt/homebrew/bin"
 fi
 
