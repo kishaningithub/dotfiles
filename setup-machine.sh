@@ -2,14 +2,37 @@
 
 set -e
 
-echo "Installing homebrew..."
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+exists()
+{
+  command -v "$1" >/dev/null 2>&1
+}
 
-echo "Installing ohmyzsh..."
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if exists brew; then
+   echo "homebrew already exists... skipping..."
+else
+    echo "Installing homebrew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
-echo "Cloning dotfiles repo..."
-git clone https://github.com/kishaningithub/dotfiles.git ~/dotfiles
+if  [[ -d ~/.oh-my-zsh ]]; then
+    echo "ohmyzsh already exists... skipping..."
+else
+     echo "Installing ohmyzsh..."
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
 
-echo "Installing all the dependencies..."
-brew bundle install --file=~/dotfiles/.Brewfile
+if [[ -d ~/dotfiles ]]; then
+    echo "dotfiles already exists... skipping..."
+else
+    echo "Cloning dotfiles repo..."
+    git clone https://github.com/kishaningithub/dotfiles.git ~/dotfiles
+fi
+
+if exists "fzf"; then
+    echo "packages are already installed already... skipping..."
+else
+    echo "Installing all the dependencies..."
+    brew bundle install --file=~/dotfiles/.Brewfile
+fi
+
+echo "Setup is complete :-)"
