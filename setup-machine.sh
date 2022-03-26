@@ -30,11 +30,7 @@ else
     git clone https://github.com/kishaningithub/dotfiles.git ~/dotfiles
 fi
 
-if exists "fzf"; then
-    echo "packages are already installed already... skipping..."
-else
-    echo "Installing all the dependencies..."
-    brew bundle install --file=~/dotfiles/.Brewfile
-fi
+echo "Installing all the dependencies..."
+brew bundle install --file=~/dotfiles/.Brewfile
 
 echo "Setup is complete :-)"
