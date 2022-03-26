@@ -13,6 +13,7 @@ tap "rs/tap"
 tap "saulpw/vd"
 tap "sonatype-nexus-community/nancy-tap"
 tap "tomanthony/brews"
+tap "tylerbrock/saw"
 # Simple, modern, secure file encryption
 brew "age"
 # Image format providing lossless and lossy compression for web images
@@ -25,8 +26,6 @@ brew "aria2"
 brew "gdbm"
 # GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
-# Command-line interface for SQLite
-brew "sqlite"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # Core application library for C
@@ -67,8 +66,12 @@ brew "gcc"
 brew "tbb"
 # C++ library for large-scale optimization
 brew "ceres-solver"
+# Validate CloudFormation templates against the CloudFormation spec
+brew "cfn-lint"
 # Generate code for scanning Z-polyhedra
 brew "cloog"
+# CloudFormation Provider Development Toolkit
+brew "cloudformation-cli"
 # Cross-platform make
 brew "cmake"
 # Console Matrix
@@ -95,12 +98,8 @@ brew "libvorbis"
 brew "srt"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
-# Implementation of malloc emphasizing fragmentation avoidance
-brew "jemalloc"
 # Cue sheet parser library for C
 brew "libcue"
-# HTTP/2 C Library
-brew "nghttp2"
 # Music player with an ncurses based interface
 brew "cmus"
 # Dependency manager for Cocoa projects
@@ -113,10 +112,10 @@ brew "direnv"
 brew "dive"
 # Text mode web browser
 brew "elinks"
-# C routines to compute the Discrete Fourier Transform
-brew "fftw"
 # Collection of reusable C++ library artifacts developed at Facebook
 brew "folly"
+# C routines to compute the Discrete Fourier Transform
+brew "fftw"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GNU Compiler Collection
@@ -151,6 +150,8 @@ brew "gradle"
 brew "graphicsmagick"
 # Framework for layout and rendering of i18n text
 brew "pango"
+# Library to render SVG files using Cairo
+brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Kubernetes package manager
@@ -175,12 +176,18 @@ brew "ideviceinstaller"
 brew "imagemagick"
 # Install and debug iPhone apps from the command-line
 brew "ios-deploy"
+# Peer-to-peer hypermedia protocol
+brew "ipfs"
 # CLI wrapper for basic network utilities on macOS - ip command
 brew "iproute2mac"
+# Implementation of malloc emphasizing fragmentation avoidance
+brew "jemalloc"
 # Manage your Java environment
 brew "jenv"
 # Json incremental digger
 brew "jid"
+# Load testing and performance measurement application
+brew "jmeter"
 # Regular expressions library
 brew "oniguruma"
 # Lightweight and flexible command-line JSON processor
@@ -205,10 +212,10 @@ brew "libxml2"
 brew "libxslt"
 # YAML Parser
 brew "libyaml"
-# Fully functional local AWS cloud stack
-brew "localstack"
 # LZMA-based compression program similar to gzip or bzip2
 brew "lzip"
+# Make/rake-like build tool using Go
+brew "mage"
 # Platform built on V8 to build network applications
 brew "node"
 # Easily convert Marp Markdown files into static HTML/CSS, PDF, PPT and images
@@ -231,6 +238,8 @@ brew "msgpack"
 brew "ncdu"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# HTTP/2 C Library
+brew "nghttp2"
 # Tiny, lightning fast, feature-packed file manager
 brew "nnn"
 # Libraries for security-enabled client and server applications
@@ -245,16 +254,10 @@ brew "nvm"
 brew "pybind11"
 # Adds an OCR text layer to scanned PDF files
 brew "ocrmypdf"
-# Protocol buffers (Google's data interchange format)
-brew "protobuf"
-# Open source computer vision library
-brew "opencv"
 # Development kit for the Java programming language
 brew "openjdk@11"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
-# Shell command parallelization utility
-brew "parallel"
 # CLI for Postgres with auto-completion and syntax highlighting
 brew "pgcli"
 # Colored logcat script to show entries only for specified app
@@ -267,18 +270,24 @@ brew "poetry"
 brew "pre-commit"
 # Highly configurable GPL-licensed FTP server software
 brew "proftpd", restart_service: true
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
 # Show ps output as a tree
 brew "pstree"
+# Cloud native development platform
+brew "pulumi"
 # Monitor data's progress through a pipe
 brew "pv"
+# Sampling profiler for Python programs
+brew "py-spy"
+# Implementation of Python 3 in Python
+brew "pypy3"
 # Cross-platform application and UI framework
 brew "qt"
 # Python bindings for v6 of Qt
 brew "pyqt"
 # Interpreted, interactive, object-oriented programming language
 brew "python@2", link: false
-# Rsync for cloud storage
-brew "rclone"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Standard unix software packaging tool
@@ -289,6 +298,8 @@ brew "ruby"
 brew "sbt"
 # JVM-based programming language
 brew "scala"
+# Easily detect and prevent bugs and anti-patterns in your codebase
+brew "semgrep"
 # Tool to create Python bindings for C and C++ libraries
 brew "sip"
 # Prints a steam locomotive if you type sl instead of ls
@@ -323,8 +334,6 @@ brew "vala"
 brew "w3m"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
-# Watch files and take action when they change
-brew "watchman"
 # Command-line tool to track (your) time
 brew "watson"
 # Internet file retriever
@@ -355,10 +364,11 @@ brew "kishaningithub/tap/memory-eater"
 brew "kishaningithub/tap/randomtext"
 # Download a shopify site in a csv format that the shopify importer understands
 brew "kishaningithub/tap/shopify-csv-download"
+brew "tomanthony/brews/itermocil"
+# Fast, multipurpose tool for AWS CloudWatch Logs
+brew "tylerbrock/saw/saw"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
-# Enable Windows-like alt-tab
-cask "alt-tab"
 # App to build and share containerized applications and microservices
 cask "docker"
 # Draw.io is free online diagram software
@@ -367,8 +377,6 @@ cask "drawio"
 cask "dropbox"
 # App for note taking, organizing, task lists, and archiving
 cask "evernote"
-# Messaging browser which combines several services
-cask "ferdi"
 # Free and open-source image editor
 cask "gimp"
 # Open-source video transcoder
@@ -389,8 +397,8 @@ cask "keepassxc"
 cask "libreoffice"
 # File system integration
 cask "osxfuse"
-# IDE for Python programming - Community Edition
-cask "pycharm-ce"
+# IDE for professional Python development
+cask "pycharm"
 # Tool to manage the size and position of windows
 cask "shiftit"
 # Team communication and collaboration software
@@ -405,6 +413,8 @@ cask "transmission"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+# View output from scripts in the menu bar
+cask "xbar"
 # Open-source version of the X.Org X Window System
 cask "xquartz"
 # Video communication and virtual meeting platform
