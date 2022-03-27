@@ -31,6 +31,6 @@ else
 fi
 
 echo "Installing all the dependencies..."
-sudo brew bundle install --file=~/dotfiles/.Brewfile
+brew bundle install --file=~/dotfiles/.Brewfile
 
 echo "Setup is complete :-)"
