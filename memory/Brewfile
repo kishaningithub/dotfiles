@@ -45,6 +45,7 @@
 # brew "ntfs-3g"
 # GNU Compiler Collection
 # brew "gcc@4.9", link: false
+# brew "tomanthony/brews/itermocil"
 # cask "android-studio"
 # cask "background-music" # Changes default audio output and helps control volume of various apps.
 # cask "flutter" # Not using it
@@ -72,3 +73,4 @@
 # tap "teamookla/speedtest"
 # tap "thecasualcoder/stable"
 # tap "tylerbrock/saw"
+# tap "tomanthony/brews"

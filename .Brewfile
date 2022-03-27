@@ -12,7 +12,6 @@ tap "mike-engel/jwt-cli"
 tap "rs/tap"
 tap "saulpw/vd"
 tap "sonatype-nexus-community/nancy-tap"
-tap "tomanthony/brews"
 tap "tylerbrock/saw"
 # Simple, modern, secure file encryption
 brew "age"
@@ -350,7 +349,6 @@ brew "kishaningithub/tap/memory-eater"
 brew "kishaningithub/tap/randomtext"
 # Download a shopify site in a csv format that the shopify importer understands
 brew "kishaningithub/tap/shopify-csv-download"
-brew "tomanthony/brews/itermocil"
 # Fast, multipurpose tool for AWS CloudWatch Logs
 brew "tylerbrock/saw/saw"
 # View, print, and comment on PDF documents
