@@ -363,6 +363,8 @@ cask "drawio"
 cask "dropbox"
 # App for note taking, organizing, task lists, and archiving
 cask "evernote"
+# Web browser
+cask "firefox"
 # Free and open-source image editor
 cask "gimp"
 # Open-source video transcoder
