@@ -98,6 +98,9 @@ export LC_ALL=en_US.UTF-8
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home"
 export HOMEBREW_EDITOR=code
 
+# GnuPG TTY config - This makes code signing work
+export GPG_TTY=$(tty)
+
 alias lb='./build_scripts/local_build.sh'
 alias crash_notifier='node $HOME/Programming/Learn/node-js/post-receiver.js'
 
@@ -145,18 +148,14 @@ fh() {
 ## Autojump
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
-## Node version maager
+## Node version manager
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
 # Add fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# GnuPG TTY config - This makes code signing work
-export GPG_TTY=$(tty)
-
 # zsh sytax highlighting
-source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

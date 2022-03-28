@@ -331,6 +331,8 @@ brew "youtube-dl"
 brew "yq"
 # General-purpose lossless data-compression library
 brew "zlib"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
 # Scanner for vulnerabilities in container images, file systems, and Git repositories, as well as for configuration issues
 brew "aquasecurity/trivy/trivy"
 # Official Amazon AWS session manager plugin
