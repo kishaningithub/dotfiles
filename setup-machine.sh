@@ -33,9 +33,6 @@ fi
 echo "Installing all the dependencies..."
 brew bundle install --file=~/dotfiles/.Brewfile
 
-echo "Installing fzf keybindings..."
-yes | /usr/local/opt/fzf/install
-
 echo "Copying zsh history"
 age --decrypt --output ~/.zshrc_history .zshrc_history.age
 
@@ -45,4 +42,8 @@ cp .zshrc ~/.zshrc
 echo "Updating gitconfig"
 cp .gitconfig* ~
 
-echo "Setup is complete :-)"
+echo "Automated Setup is complete :-)"
+
+echo "List of manual things to do (If not done)"
+echo "1. Install fzf keybindings"
+echo "2. Move ssh keys"
