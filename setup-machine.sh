@@ -42,12 +42,14 @@ cp .zshrc ~/.zshrc
 echo "Updating gitconfig"
 cp .gitconfig* ~
 
+echo "Performing additional setup for homebrew packages"
+yes | $(brew --prefix)/opt/fzf/install
+
 echo "Automated Setup is complete :-)"
 
 echo "List of manual things to do (If not done)"
-echo "1. Install fzf keybindings"
-echo "2. Airdrop ssh keys"
-echo "3. Airdrop programming folder"
-echo "4. Airdrop year end folder"
-echo "5. Airdrop Documents folder"
-echo "6. Airdrop Downloads folder"
+echo "- Airdrop ssh keys"
+echo "- Airdrop programming folder"
+echo "- Airdrop year end folder"
+echo "- Airdrop Documents folder"
+echo "- Airdrop Downloads folder"
