@@ -29,8 +29,6 @@ brew "gettext"
 brew "python@3.9"
 # Core application library for C
 brew "glib"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.8"
 # GNOME accessibility toolkit
 brew "atk"
 # Automatic configure script builder
@@ -169,6 +167,8 @@ brew "hugo"
 brew "hyperfine"
 # Tool for managing apps on iOS devices
 brew "ideviceinstaller"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Install and debug iPhone apps from the command-line
