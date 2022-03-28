@@ -31,7 +31,7 @@ else
 fi
 
 echo "Installing all the dependencies..."
-brew bundle install --file=~/dotfiles/.Brewfile
+brew bundle install --file=~/dotfiles/.Brewfile --no-lock
 
 echo "Copying zsh history"
 age --decrypt --output ~/.zshrc_history .zshrc_history.age
