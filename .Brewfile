@@ -381,6 +381,8 @@ cask "joplin"
 cask "keepassxc"
 # Office suite
 cask "libreoffice"
+# Meet, chat, call, and collaborate in just one place
+cask "microsoft-teams"
 # IDE for professional Python development
 cask "pycharm"
 # Tool to manage the size and position of windows
