@@ -159,3 +159,10 @@ export NVM_DIR="$HOME/.nvm"
 # zsh sytax highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+## Project specific aliases
+## TODO - move it to project specific folder
+story() {
+   number="$1";
+   open "https://greyscaleai.visualstudio.com/GreyscaleAI%20Core/_workitems/edit/${number}"
+}

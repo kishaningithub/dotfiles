@@ -46,6 +46,8 @@
 # GNU Compiler Collection
 # brew "gcc@4.9", link: false
 # brew "tomanthony/brews/itermocil"
+# Toolkit for assembling FITS images into custom mosaics
+# brew "montage"
 # cask "android-studio"
 # cask "background-music" # Changes default audio output and helps control volume of various apps.
 # cask "flutter" # Not using it
@@ -74,3 +76,7 @@
 # tap "thecasualcoder/stable"
 # tap "tylerbrock/saw"
 # tap "tomanthony/brews"
+# App to build and share containerized applications and microservices
+# cask "docker"
+# Tool to manage the size and position of windows
+# cask "shiftit"

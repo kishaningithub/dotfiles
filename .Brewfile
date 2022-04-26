@@ -1,6 +1,7 @@
 tap "aquasecurity/trivy"
 tap "dkanejs/aws-session-manager-plugin"
 tap "go-delve/delve"
+tap "guumaster/tap"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -15,14 +16,18 @@ tap "sonatype-nexus-community/nancy-tap"
 tap "tylerbrock/saw"
 # Simple, modern, secure file encryption
 brew "age"
-# Image format providing lossless and lossy compression for web images
-brew "webp"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
-# Download with resuming and segmented downloading
-brew "aria2"
 # GNU database manager
 brew "gdbm"
+# YAML Parser
+brew "libyaml"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
+# Automate deployment, configuration, and upgrading
+brew "ansible"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# Download with resuming and segmented downloading
+brew "aria2"
 # GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
 # Interpreted, interactive, object-oriented programming language
@@ -99,20 +104,28 @@ brew "tesseract"
 brew "libcue"
 # Music player with an ncurses based interface
 brew "cmus"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
+# Container runtimes on MacOS with minimal setup
+brew "colima"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # Tool for exploring each layer in a docker image
 brew "dive"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Isolated development environments using Docker
+brew "docker-compose"
 # Text mode web browser
 brew "elinks"
-# Collection of reusable C++ library artifacts developed at Facebook
-brew "folly"
 # C routines to compute the Discrete Fourier Transform
 brew "fftw"
+# Collection of reusable C++ library artifacts developed at Facebook
+brew "folly"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Toolkit for image loading and pixel buffer manipulation
@@ -123,6 +136,8 @@ brew "git"
 brew "gsettings-desktop-schemas"
 # Network related modules for glib
 brew "glib-networking"
+# Render markdown on the CLI
+brew "glow"
 # Full-Featured Open-Source Framework for Image Processing
 brew "gmic"
 # Common error values for all GnuPG components
@@ -167,8 +182,6 @@ brew "hugo"
 brew "hyperfine"
 # Tool for managing apps on iOS devices
 brew "ideviceinstaller"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.8"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Install and debug iPhone apps from the command-line
@@ -207,8 +220,6 @@ brew "libuv"
 brew "libxml2"
 # C XSLT library for GNOME
 brew "libxslt"
-# YAML Parser
-brew "libyaml"
 # LZMA-based compression program similar to gzip or bzip2
 brew "lzip"
 # Make/rake-like build tool using Go
@@ -227,8 +238,6 @@ brew "micro"
 brew "midnight-commander"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
-# Toolkit for assembling FITS images into custom mosaics
-brew "montage"
 # Library for a binary-based efficient data interchange format
 brew "msgpack"
 # NCurses Disk Usage
@@ -275,12 +284,12 @@ brew "pulumi"
 brew "pv"
 # Sampling profiler for Python programs
 brew "py-spy"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.8"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Standard unix software packaging tool
 brew "rpm"
-# Powerful, clean, object-oriented scripting language
-brew "ruby"
 # Build tool for Scala projects
 brew "sbt"
 # JVM-based programming language
@@ -297,6 +306,10 @@ brew "sphinx-doc"
 brew "sqldiff"
 # User interface to the TELNET protocol
 brew "telnet"
+# Tool to build, change, and version infrastructure
+brew "terraform"
+# Terraform State → Ansible Dynamic Inventory
+brew "terraform-inventory"
 # Enables extra languages support for Tesseract
 brew "tesseract-lang"
 # Executes SQL across text files
@@ -337,6 +350,8 @@ brew "zsh-syntax-highlighting"
 brew "aquasecurity/trivy/trivy"
 # Official Amazon AWS session manager plugin
 brew "dkanejs/aws-session-manager-plugin/aws-session-manager-plugin"
+# Your dev tool to manage /etc/hosts like a pro
+brew "guumaster/tap/hostctl"
 # A no sweat backup and restore tool for dynamodb
 brew "kishaningithub/tap/dynamodb-backup-restore"
 # Clone your dynamodb
@@ -351,12 +366,12 @@ brew "kishaningithub/tap/memory-eater"
 brew "kishaningithub/tap/randomtext"
 # Download a shopify site in a csv format that the shopify importer understands
 brew "kishaningithub/tap/shopify-csv-download"
+# Super fast CLI tool to decode and encode JWTs built in Rust
+brew "mike-engel/jwt-cli/jwt-cli"
 # Fast, multipurpose tool for AWS CloudWatch Logs
 brew "tylerbrock/saw/saw"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
-# App to build and share containerized applications and microservices
-cask "docker"
 # Draw.io is free online diagram software
 cask "drawio"
 # Client for the Dropbox cloud storage service
@@ -367,6 +382,8 @@ cask "evernote"
 cask "firefox"
 # Free and open-source image editor
 cask "gimp"
+# Web browser
+cask "google-chrome"
 # Open-source video transcoder
 cask "handbrake"
 # Tool to optimize images to a smaller size
@@ -387,8 +404,8 @@ cask "libreoffice"
 cask "microsoft-teams"
 # IDE for professional Python development
 cask "pycharm"
-# Tool to manage the size and position of windows
-cask "shiftit"
+# Free and Open Source messaging and emailing app
+cask "rambox"
 # Team communication and collaboration software
 cask "slack"
 # System monitor for the menu bar
