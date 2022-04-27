@@ -404,8 +404,6 @@ cask "libreoffice"
 cask "microsoft-teams"
 # IDE for professional Python development
 cask "pycharm"
-# Free and Open Source messaging and emailing app
-cask "rambox"
 # Team communication and collaboration software
 cask "slack"
 # System monitor for the menu bar

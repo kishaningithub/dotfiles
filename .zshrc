@@ -92,6 +92,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Set PATH - Paths are prepended to ensure homebrew deps get first priority
+export PATH="$(brew --prefix)/bin:$(brew --prefix)/opt/openjdk@11/bin:$PATH"
+
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 

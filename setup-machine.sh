@@ -19,8 +19,7 @@ if exists brew; then
 else
     echo "Installing homebrew..."
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    sudo sh -c 'echo "/opt/homebrew/bin" >> /etc/paths'
-    export PATH="$PATH:/opt/homebrew/bin"
+    export PATH="$(brew --prefix)/bin:$PATH"
 fi
 
 if [[ -d ~/dotfiles ]]; then
@@ -30,17 +29,17 @@ else
     git clone https://github.com/kishaningithub/dotfiles.git ~/dotfiles
 fi
 
-echo "Installing all the dependencies..."
-brew bundle install --file=~/dotfiles/.Brewfile --no-lock
+echo "Ensuring all the applications are installed..."
+brew bundle check --file=~/dotfiles/.Brewfile --verbose --no-upgrade || brew bundle install --file=~/dotfiles/.Brewfile --no-lock
+
+echo "Updating zshrc..."
+cp .zshrc ~/.zshrc
+
+echo "Updating gitconfig..."
+cp .gitconfig* ~
 
 echo "Copying zsh history"
 age --decrypt --output ~/.zshrc_history .zshrc_history.age
-
-echo "Updating zshrc"
-cp .zshrc ~/.zshrc
-
-echo "Updating gitconfig"
-cp .gitconfig* ~
 
 echo "Performing additional setup for homebrew packages"
 yes | $(brew --prefix)/opt/fzf/install
