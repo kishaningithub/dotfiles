@@ -1,5 +1,6 @@
 tap "aquasecurity/trivy"
 tap "dkanejs/aws-session-manager-plugin"
+tap "ferdium/ferdium"
 tap "go-delve/delve"
 tap "guumaster/tap"
 tap "hashicorp/tap"
@@ -26,10 +27,10 @@ brew "openssl@1.1"
 brew "ansible"
 # Image format providing lossless and lossy compression for web images
 brew "webp"
-# Download with resuming and segmented downloading
-brew "aria2"
 # GNU internationalization (i18n) and localization (l10n) library
 brew "gettext"
+# Download with resuming and segmented downloading
+brew "aria2"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # Core application library for C
@@ -378,6 +379,8 @@ cask "drawio"
 cask "dropbox"
 # App for note taking, organizing, task lists, and archiving
 cask "evernote"
+# All your services in one place
+cask "ferdium-nightly"
 # Web browser
 cask "firefox"
 # Free and open-source image editor
