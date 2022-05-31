@@ -109,7 +109,7 @@ brew "cmus"
 brew "ruby"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
-# Container runtimes on MacOS with minimal setup
+# Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
@@ -263,6 +263,8 @@ brew "ocrmypdf"
 brew "openjdk@11"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
+# Apache Parquet command-line tools and utilities
+brew "parquet-tools"
 # CLI for Postgres with auto-completion and syntax highlighting
 brew "pgcli"
 # Colored logcat script to show entries only for specified app
@@ -407,6 +409,8 @@ cask "libreoffice"
 cask "microsoft-teams"
 # IDE for professional Python development
 cask "pycharm"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
 # Team communication and collaboration software
 cask "slack"
 # System monitor for the menu bar
