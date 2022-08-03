@@ -170,3 +170,5 @@ story() {
    number="$1";
    open "https://greyscaleai.visualstudio.com/GreyscaleAI%20Core/_workitems/edit/${number}"
 }
+
+alias bupc='brew update && brew upgrade && brew cleanup'

@@ -31,10 +31,10 @@ brew "webp"
 brew "gettext"
 # Download with resuming and segmented downloading
 brew "aria2"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # Core application library for C
 brew "glib"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # GNOME accessibility toolkit
 brew "atk"
 # Automatic configure script builder
@@ -53,6 +53,8 @@ brew "bat"
 brew "bdw-gc"
 # Remove large files or passwords from Git history like git-filter-branch
 brew "bfg"
+# Interface bandwidth monitor
+brew "bmon"
 # Pipe HTML to a browser
 brew "browser"
 # XML-based font configuration API for X Windows
@@ -89,10 +91,10 @@ brew "libtool"
 brew "libidn2"
 # Validating, recursive, caching DNS resolver
 brew "unbound", restart_service: true
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
 # Vorbis General Audio Compression Codec
@@ -113,6 +115,10 @@ brew "cocoapods"
 brew "colima"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Configurable talking characters in ASCII art
+brew "cowsay"
+# Validate and define text-based and dynamic configuration
+brew "cue"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # Tool for exploring each layer in a docker image
@@ -123,10 +129,14 @@ brew "docker"
 brew "docker-compose"
 # Text mode web browser
 brew "elinks"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
 # C routines to compute the Discrete Fourier Transform
 brew "fftw"
 # Collection of reusable C++ library artifacts developed at Facebook
 brew "folly"
+# Infamous electronic fortune-cookie generator
+brew "fortune"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Toolkit for image loading and pixel buffer manipulation
@@ -209,6 +219,8 @@ brew "k6"
 brew "kcat"
 # Network authentication protocol
 brew "krb5"
+# Simple terminal UI for git commands
+brew "lazygit"
 # Postgres C API library
 brew "libpq"
 # Library for complex text layout
@@ -289,6 +301,8 @@ brew "pv"
 brew "py-spy"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
+# Rsync for cloud storage
+brew "rclone"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Standard unix software packaging tool
@@ -333,6 +347,8 @@ brew "tz"
 brew "unixodbc"
 # Compiler for the GObject type system
 brew "vala"
+# HTTP load testing tool and library
+brew "vegeta"
 # Pager/text based browser
 brew "w3m"
 # Executes a program periodically, showing output fullscreen
@@ -381,10 +397,14 @@ cask "drawio"
 cask "dropbox"
 # App for note taking, organizing, task lists, and archiving
 cask "evernote"
+# Multi-platform multi-messaging app
+cask "ferdium"
 # All your services in one place
 cask "ferdium-nightly"
 # Web browser
 cask "firefox"
+# Clipboard manager for developers
+cask "flycut"
 # Free and open-source image editor
 cask "gimp"
 # Web browser
@@ -407,6 +427,10 @@ cask "keepassxc"
 cask "libreoffice"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Neovim Client
+cask "neovide"
+# App wrapper for Postgres
+cask "postgres-unofficial"
 # IDE for professional Python development
 cask "pycharm"
 # Move and resize windows using keyboard shortcuts or snap areas
