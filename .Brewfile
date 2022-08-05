@@ -403,6 +403,8 @@ cask "ferdium"
 cask "ferdium-nightly"
 # Web browser
 cask "firefox"
+# Screen color temperature controller
+cask "flux"
 # Clipboard manager for developers
 cask "flycut"
 # Free and open-source image editor
