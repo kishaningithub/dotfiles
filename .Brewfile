@@ -2,6 +2,8 @@ tap "aquasecurity/trivy"
 tap "dkanejs/aws-session-manager-plugin"
 tap "ferdium/ferdium"
 tap "go-delve/delve"
+tap "golangci/tap"
+tap "goreleaser/tap"
 tap "guumaster/tap"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
@@ -369,6 +371,8 @@ brew "zsh-syntax-highlighting"
 brew "aquasecurity/trivy/trivy"
 # Official Amazon AWS session manager plugin
 brew "dkanejs/aws-session-manager-plugin/aws-session-manager-plugin"
+# Deliver Go binaries as fast and easily as possible
+brew "goreleaser/tap/goreleaser"
 # Your dev tool to manage /etc/hosts like a pro
 brew "guumaster/tap/hostctl"
 # A no sweat backup and restore tool for dynamodb
