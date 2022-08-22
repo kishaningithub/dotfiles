@@ -433,8 +433,6 @@ cask "keepassxc"
 cask "libreoffice"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
-# Neovim Client
-cask "neovide"
 # App wrapper for Postgres
 cask "postgres-unofficial"
 # IDE for professional Python development
