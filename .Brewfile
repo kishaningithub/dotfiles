@@ -45,6 +45,16 @@ brew "autoconf"
 brew "autojump"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
+# XML-based font configuration API for X Windows
+brew "fontconfig"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# X.Org: Core X11 protocol client library
+brew "libx11"
+# Vector graphics library with cross-device output support
+brew "cairo"
+# OpenType text shaping engine
+brew "harfbuzz"
 # Avro command-line tools and utilities
 brew "avro-tools"
 # Official Amazon AWS command-line interface
@@ -59,14 +69,6 @@ brew "bfg"
 brew "bmon"
 # Pipe HTML to a browser
 brew "browser"
-# XML-based font configuration API for X Windows
-brew "fontconfig"
-# Manage compile and link flags for libraries
-brew "pkg-config"
-# X.Org: Core X11 protocol client library
-brew "libx11"
-# Vector graphics library with cross-device output support
-brew "cairo"
 # GNU compiler collection
 brew "gcc"
 # Rich and complete approach to parallelism in C++
@@ -93,8 +95,6 @@ brew "libtool"
 brew "libidn2"
 # Validating, recursive, caching DNS resolver
 brew "unbound", restart_service: true
-# OpenType text shaping engine
-brew "harfbuzz"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
 # Subtitle renderer for the ASS/SSA subtitle format
@@ -253,6 +253,8 @@ brew "micro"
 brew "midnight-commander"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
+# Move, copy, append, and link multiple files
+brew "mmv"
 # Library for a binary-based efficient data interchange format
 brew "msgpack"
 # NCurses Disk Usage
@@ -277,6 +279,8 @@ brew "ocrmypdf"
 brew "openjdk@11"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
+# Apache Parquet command-line tools and utilities
+brew "parquet-cli"
 # Apache Parquet command-line tools and utilities
 brew "parquet-tools"
 # CLI for Postgres with auto-completion and syntax highlighting
@@ -403,8 +407,6 @@ cask "dropbox"
 cask "evernote"
 # Multi-platform multi-messaging app
 cask "ferdium"
-# All your services in one place
-cask "ferdium-nightly"
 # Web browser
 cask "firefox"
 # Screen color temperature controller
@@ -443,6 +445,8 @@ cask "rectangle"
 cask "slack"
 # System monitor for the menu bar
 cask "stats"
+# Customizable email client
+cask "thunderbird"
 # Web browser focusing on security
 cask "tor-browser"
 # Open-source BitTorrent client

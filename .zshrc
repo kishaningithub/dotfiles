@@ -95,6 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # Set PATH - Paths are prepended to ensure homebrew deps get first priority
 export PATH="/opt/homebrew/bin:$PATH" # Solve chicken and egg problem of homebrew binary being not present in path
 export PATH="$(brew --prefix)/opt/openjdk@11/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
