@@ -1,7 +1,5 @@
 disabled: []
 enabled:
-  - id: amazonwebservices.aws-toolkit-vscode
-    uuid: ac5787df-9b2d-441c-abf0-977d62bc66f0
   - id: brody715.vscode-cuelang
     uuid: ec749621-363b-4d8e-ba1b-9ce3204f085e
   - id: bungcip.better-toml
