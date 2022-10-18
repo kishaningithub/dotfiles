@@ -16,6 +16,7 @@ tap "mike-engel/jwt-cli"
 tap "rs/tap"
 tap "saulpw/vd"
 tap "sonatype-nexus-community/nancy-tap"
+tap "turbot/tap"
 tap "tylerbrock/saw"
 # Simple, modern, secure file encryption
 brew "age"
@@ -255,8 +256,20 @@ brew "midnight-commander"
 brew "mkcert"
 # Move, copy, append, and link multiple files
 brew "mmv"
+# Collection of tools that nobody wrote when UNIX was young
+brew "moreutils"
 # Library for a binary-based efficient data interchange format
 brew "msgpack"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Text interface for Git repositories
+brew "tig"
+# Pager/text based browser
+brew "w3m"
+# Command-line and local web note‑taking, bookmarking, and archiving
+brew "nb"
 # NCurses Disk Usage
 brew "ncdu"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -277,8 +290,6 @@ brew "pybind11"
 brew "ocrmypdf"
 # Development kit for the Java programming language
 brew "openjdk@11"
-# Swiss-army knife of markup format conversion
-brew "pandoc"
 # Apache Parquet command-line tools and utilities
 brew "parquet-cli"
 # Apache Parquet command-line tools and utilities
@@ -309,8 +320,6 @@ brew "py-spy"
 brew "python@3.8"
 # Rsync for cloud storage
 brew "rclone"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
 # Standard unix software packaging tool
 brew "rpm"
 # Build tool for Scala projects
@@ -337,8 +346,8 @@ brew "terraform-inventory"
 brew "tesseract-lang"
 # Executes SQL across text files
 brew "textql"
-# Text interface for Git repositories
-brew "tig"
+# Code-search similar to ack
+brew "the_silver_searcher"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
@@ -355,14 +364,16 @@ brew "unixodbc"
 brew "vala"
 # HTTP load testing tool and library
 brew "vegeta"
-# Pager/text based browser
-brew "w3m"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # Command-line tool to track (your) time
 brew "watson"
 # Internet file retriever
 brew "wget"
+# Personal information dashboard for your terminal
+brew "wtfutil"
+# Monero (XMR) CPU miner
+brew "xmrig"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
 # Process YAML documents from the CLI
@@ -395,6 +406,8 @@ brew "kishaningithub/tap/randomtext"
 brew "kishaningithub/tap/shopify-csv-download"
 # Super fast CLI tool to decode and encode JWTs built in Rust
 brew "mike-engel/jwt-cli/jwt-cli"
+# Steampipe exposes APIs and services as a high-performance relational database, giving you the ability to write SQL-based queries to explore, assess and report on dynamic data.
+brew "turbot/tap/steampipe"
 # Fast, multipurpose tool for AWS CloudWatch Logs
 brew "tylerbrock/saw/saw"
 # View, print, and comment on PDF documents
@@ -421,6 +434,8 @@ cask "google-chrome"
 cask "handbrake"
 # Tool to optimize images to a smaller size
 cask "imageoptim"
+# Vector graphics editor
+cask "inkscape"
 # Java IDE by JetBrains
 cask "intellij-idea"
 # Terminal emulator as alternative to Apple's Terminal app
@@ -455,6 +470,8 @@ cask "transmission"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+# Binary releases of VS Code without MS branding/telemetry/licensing
+cask "vscodium"
 # View output from scripts in the menu bar
 cask "xbar"
 # Open-source version of the X.Org X Window System
