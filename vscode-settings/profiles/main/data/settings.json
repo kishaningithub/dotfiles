@@ -72,8 +72,11 @@
     },
     "aws.codeWhisperer.includeSuggestionsWithCodeReferences": false,
     "settingsSync.ignoredExtensions": [
-        
 
-    
-    ]
+
+
+    ],
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
