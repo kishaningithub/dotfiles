@@ -10,6 +10,8 @@ enabled:
     uuid: 583b2b34-2c1e-4634-8c0b-0b82e283ea3a
   - id: DotJoshJohnson.xml
     uuid: 0cb81da2-1880-4755-9995-0ae9cc728e20
+  - id: dpkshrma.insert-iso-timestamp
+    uuid: 1a6c8368-d70b-46bb-8414-bd47f14b7712
   - id: dvirtz.parquet-viewer
     uuid: b0d61cc0-c99f-47d2-88eb-6b26dc2a5b1e
   - id: eamodio.gitlens
@@ -30,6 +32,8 @@ enabled:
     uuid: ea6a6046-2132-421f-a984-664909fcf0b8
   - id: k--kato.intellij-idea-keybindings
     uuid: f30b63fa-e34a-40af-a573-5de5ecfb6c5e
+  - id: kj.sqltools-driver-redshift
+    uuid: 79682668-03eb-4b9d-adbd-103d137a6f34
   - id: lightbend.vscode-sbt-scala
     uuid: e09613e9-f75d-4ddf-be87-bdf45c6121ea
   - id: LogInspector.loginspector
@@ -54,6 +58,8 @@ enabled:
     uuid: 48154c8d-77c4-4978-a3a2-807fc5266321
   - id: ms-mssql.sql-database-projects-vscode
     uuid: 4e9e1d12-64b6-4573-9203-f601d27de5a3
+  - id: ms-python.isort
+    uuid: 4ad0ce32-ff3f-49f0-83b5-93e5dc00cfff
   - id: ms-python.python
     uuid: f1f59ae4-9318-4f3c-a9b5-81b2eaa5f8a5
   - id: ms-python.vscode-pylance
@@ -78,8 +84,12 @@ enabled:
     uuid: 690b692e-e8a9-493f-b802-8089d50ac1b2
   - id: ms-vscode.makefile-tools
     uuid: e09cf600-90a1-414e-92a0-031f1a5391c6
+  - id: ms-vscode.remote-explorer
+    uuid: 11858313-52cc-4e57-b3e4-d7b65281e34b
   - id: mtxr.sqltools
     uuid: 6a2bbab0-d8f0-43fa-9b26-e6a3b7892a0b
+  - id: mtxr.sqltools-driver-pg
+    uuid: ff850146-c38e-4afe-8a34-705074ae16e2
   - id: mushan.vscode-paste-image
     uuid: ffaf4ec8-f001-4f02-b671-705ecf079cde
   - id: netcorext.uuid-generator
