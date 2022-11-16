@@ -172,4 +172,9 @@ story() {
    open "https://greyscaleai.visualstudio.com/GreyscaleAI%20Core/_workitems/edit/${number}"
 }
 
+mkcd() {
+    mkdir -p "${1}"
+    cd "${1}"
+}
+
 alias bupc='brew update && brew upgrade && brew cleanup'

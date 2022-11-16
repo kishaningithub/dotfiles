@@ -16,8 +16,11 @@ tap "mike-engel/jwt-cli"
 tap "rs/tap"
 tap "saulpw/vd"
 tap "sonatype-nexus-community/nancy-tap"
+tap "trufflesecurity/trufflehog"
 tap "turbot/tap"
 tap "tylerbrock/saw"
+# Portable ASCII art graphics library
+brew "aalib"
 # Simple, modern, secure file encryption
 brew "age"
 # GNU database manager
@@ -34,18 +37,26 @@ brew "webp"
 brew "gettext"
 # Download with resuming and segmented downloading
 brew "aria2"
+# Automatic configure script builder
+brew "autoconf"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Generic library support script
+brew "libtool"
+# ODBC 3 connectivity for UNIX
+brew "unixodbc"
+# Extendable version manager with support for Ruby, Node.js, Erlang & more
+brew "asdf"
 # Core application library for C
 brew "glib"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # GNOME accessibility toolkit
 brew "atk"
-# Automatic configure script builder
-brew "autoconf"
 # Shell extension to jump to frequently used directories
 brew "autojump"
-# Tool for generating GNU Standards-compliant Makefiles
-brew "automake"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
 # Manage compile and link flags for libraries
@@ -90,8 +101,6 @@ brew "cmatrix"
 brew "faad2"
 # Free lossless audio codec
 brew "flac"
-# Generic library support script
-brew "libtool"
 # International domain name library (IDNA2008, Punycode and TR46)
 brew "libidn2"
 # Validating, recursive, caching DNS resolver
@@ -116,8 +125,6 @@ brew "ruby"
 brew "cocoapods"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
-# GNU File, Shell, and Text utilities
-brew "coreutils"
 # Configurable talking characters in ASCII art
 brew "cowsay"
 # Validate and define text-based and dynamic configuration
@@ -310,14 +317,14 @@ brew "proftpd", restart_service: true
 brew "protobuf"
 # Show ps output as a tree
 brew "pstree"
-# Cloud native development platform
-brew "pulumi"
 # Monitor data's progress through a pipe
 brew "pv"
 # Sampling profiler for Python programs
 brew "py-spy"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
+# Generate types and converters from JSON, Schema, and GraphQL
+brew "quicktype"
 # Rsync for cloud storage
 brew "rclone"
 # Standard unix software packaging tool
@@ -358,8 +365,6 @@ brew "tree"
 brew "ttyplot"
 # CLI time zone visualizer
 brew "tz"
-# ODBC 3 connectivity for UNIX
-brew "unixodbc"
 # Compiler for the GObject type system
 brew "vala"
 # HTTP load testing tool and library
@@ -382,8 +387,6 @@ brew "yq"
 brew "zlib"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# Scanner for vulnerabilities in container images, file systems, and Git repositories, as well as for configuration issues
-brew "aquasecurity/trivy/trivy"
 # Official Amazon AWS session manager plugin
 brew "dkanejs/aws-session-manager-plugin/aws-session-manager-plugin"
 # Deliver Go binaries as fast and easily as possible
@@ -402,10 +405,14 @@ brew "kishaningithub/tap/kafka-perf"
 brew "kishaningithub/tap/memory-eater"
 # Command line random text generator
 brew "kishaningithub/tap/randomtext"
+# rdapp - redshift data api postgres proxy
+brew "kishaningithub/tap/rdapp"
 # Download a shopify site in a csv format that the shopify importer understands
 brew "kishaningithub/tap/shopify-csv-download"
 # Super fast CLI tool to decode and encode JWTs built in Rust
 brew "mike-engel/jwt-cli/jwt-cli"
+# Find credentials all over the place
+brew "trufflesecurity/trufflehog/trufflehog"
 # Steampipe exposes APIs and services as a high-performance relational database, giving you the ability to write SQL-based queries to explore, assess and report on dynamic data.
 brew "turbot/tap/steampipe"
 # Fast, multipurpose tool for AWS CloudWatch Logs
@@ -448,8 +455,12 @@ cask "joplin"
 cask "keepassxc"
 # Office suite
 cask "libreoffice"
+# Animated screen capture application
+cask "licecap"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Web browser
+cask "opera"
 # App wrapper for Postgres
 cask "postgres-unofficial"
 # IDE for professional Python development
