@@ -29,6 +29,8 @@ brew "gdbm"
 brew "libyaml"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Image format providing lossless and lossy compression for web images
@@ -321,6 +323,8 @@ brew "pstree"
 brew "pv"
 # Sampling profiler for Python programs
 brew "py-spy"
+# Python version management
+brew "pyenv"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.8"
 # Generate types and converters from JSON, Schema, and GraphQL
@@ -359,6 +363,8 @@ brew "the_silver_searcher"
 brew "tldr"
 # Terminal multiplexer
 brew "tmux"
+# Generic Python virtualenv management and test command-line tool
+brew "tox"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Realtime plotting utility for terminal with data input from stdin
@@ -419,6 +425,8 @@ brew "turbot/tap/steampipe"
 brew "tylerbrock/saw/saw"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
+# Managed desktop virtualization solution
+cask "citrix-workspace"
 # Draw.io is free online diagram software
 cask "drawio"
 # Client for the Dropbox cloud storage service
@@ -467,6 +475,8 @@ cask "postgres-unofficial"
 cask "pycharm"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Authentication software
+cask "securid"
 # Team communication and collaboration software
 cask "slack"
 # System monitor for the menu bar
