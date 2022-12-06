@@ -1,14 +1,40 @@
 [credential]
 	helper = osxkeychain
-	
-[include]
-	# path = ~/.gitconfig.personal
+
+[includeIf "gitdir:~/"]
+	path = ~/personal.gitconfig
+[includeIf "gitdir:~/Programming/Thoughtworks/gilead"]
+	path = ~/gilead.gitconfig
+
 [user]
 	name = Kishan B
-	email = kishancs46@gmail.com
+
 [pull]
 	rebase = true
+
 [init]
 	defaultBranch = main
+
+# delta - config start - more info https://github.com/dandavison/delta
+
 [pager]
 	log = false
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+	line-numbers = true
+	side-by-side = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
+
+# delta - config end - more info https://github.com/dandavison/delta

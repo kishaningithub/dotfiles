@@ -1,0 +1,5 @@
+[user]
+	email = Kishan.Bhavanishankar@gilead.com
+
+[core]
+	sshCommand = ssh -i ~/.ssh/gilead_rsa 

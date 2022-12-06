@@ -155,6 +155,8 @@ brew "fzf"
 brew "gdk-pixbuf"
 # Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # GSettings schemas for desktop components
 brew "gsettings-desktop-schemas"
 # Network related modules for glib
@@ -383,11 +385,9 @@ brew "watson"
 brew "wget"
 # Personal information dashboard for your terminal
 brew "wtfutil"
-# Monero (XMR) CPU miner
-brew "xmrig"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
-# Process YAML documents from the CLI
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # General-purpose lossless data-compression library
 brew "zlib"
@@ -445,6 +445,8 @@ cask "flycut"
 cask "gimp"
 # Web browser
 cask "google-chrome"
+# Client for the Google Drive storage service
+cask "google-drive"
 # Open-source video transcoder
 cask "handbrake"
 # Tool to optimize images to a smaller size

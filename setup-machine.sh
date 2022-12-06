@@ -33,10 +33,11 @@ echo "Ensuring all the applications are installed..."
 brew bundle check --file=~/dotfiles/.Brewfile --verbose --no-upgrade || brew bundle install --file=~/dotfiles/.Brewfile --no-lock
 
 echo "Updating zshrc..."
-cp .zshrc ~/.zshrc
+cp ./.zshrc ~/.zshrc
 
 echo "Updating gitconfig..."
-cp .gitconfig* ~
+cp ./.gitconfig ~
+cp ./*.gitconfig ~
 
 echo "Copying zsh history"
 age --decrypt --output ~/.zshrc_history .zshrc_history.age

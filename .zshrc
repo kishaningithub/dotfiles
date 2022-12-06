@@ -122,6 +122,7 @@ alias ssm_stg_list='aws ssm get-parameters-by-path --path /config/$(basename `pw
 
 ulimit -S -n 9999
 ssh-add --apple-use-keychain ~/.ssh/id_rsa
+ssh-add --apple-use-keychain ~/.ssh/gilead_rsa
 
 clone-db () {
   db="$1"
@@ -169,7 +170,7 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 ## TODO - move it to project specific folder
 story() {
    number="$1";
-   open "https://greyscaleai.visualstudio.com/GreyscaleAI%20Core/_workitems/edit/${number}"
+   open "https://gileaddevops.atlassian.net/browse/${number}"
 }
 
 mkcd() {
