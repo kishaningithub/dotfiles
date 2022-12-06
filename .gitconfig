@@ -3,7 +3,7 @@
 
 [includeIf "gitdir:~/"]
 	path = ~/personal.gitconfig
-[includeIf "gitdir:~/Programming/Thoughtworks/gilead"]
+[includeIf "gitdir:~/Programming/Thoughtworks/gilead/"]
 	path = ~/gilead.gitconfig
 
 [user]
