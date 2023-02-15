@@ -28,6 +28,8 @@ enabled:
     uuid: 3cca2f62-8afb-4fdb-863b-6b0cf9362a8c
   - id: GraphQL.vscode-graphql-syntax
     uuid: e1ab76b1-9acd-4ffa-baf7-1d9eaf7cf3d2
+  - id: hashicorp.terraform
+    uuid: 4a23294b-fd16-4c51-9759-da9936474cf8
   - id: hediet.vscode-drawio
     uuid: ea6a6046-2132-421f-a984-664909fcf0b8
   - id: k--kato.intellij-idea-keybindings
@@ -100,10 +102,6 @@ enabled:
     uuid: 7997a8ae-1fae-4022-b834-12f6318aeffd
   - id: pflannery.vscode-versionlens
     uuid: 07fc4a0a-11fc-4121-ba9a-f0d534c729d8
-  - id: Pivotal.vscode-boot-dev-pack
-    uuid: 26069f6b-56ea-4c29-8e28-371698a60020
-  - id: Pivotal.vscode-spring-boot
-    uuid: 0efda145-8595-4ff7-98ef-1e3abc5e5757
   - id: Prisma.prisma
     uuid: 33ce9d6b-41cf-4972-a62b-386f7201981d
   - id: quicktype.quicktype
@@ -130,6 +128,10 @@ enabled:
     uuid: 324a3d09-7c55-41f9-86ed-156f7cd08e2c
   - id: usernamehw.remove-empty-lines
     uuid: 10a12f01-b6a2-4dc4-89c0-e42c01f02e0e
+  - id: vmware.vscode-boot-dev-pack
+    uuid: 26069f6b-56ea-4c29-8e28-371698a60020
+  - id: vmware.vscode-spring-boot
+    uuid: 0efda145-8595-4ff7-98ef-1e3abc5e5757
   - id: vscjava.vscode-gradle
     uuid: a226f06e-9b5e-493b-b92a-553d3572f969
   - id: vscjava.vscode-java-debug
@@ -150,3 +152,5 @@ enabled:
     uuid: c46b0018-f317-4b6c-a785-d2039b27338f
   - id: yzhang.markdown-all-in-one
     uuid: 98790d67-10fa-497c-9113-f6c7489207b2
+  - id: zokugun.cron-tasks
+    uuid: b7bbbbd5-7a39-4312-87aa-ef6a41de67fb
