@@ -1,4 +1,5 @@
 tap "aquasecurity/trivy"
+tap "aws/tap"
 tap "dkanejs/aws-session-manager-plugin"
 tap "ferdium/ferdium"
 tap "go-delve/delve"
@@ -19,18 +20,17 @@ tap "sonatype-nexus-community/nancy-tap"
 tap "trufflesecurity/trufflehog"
 tap "turbot/tap"
 tap "tylerbrock/saw"
+tap "zmwangx/npm-noob"
 # Portable ASCII art graphics library
 brew "aalib"
+# Run your GitHub Actions locally 🚀
+brew "act"
 # Simple, modern, secure file encryption
 brew "age"
-# GNU database manager
-brew "gdbm"
 # YAML Parser
 brew "libyaml"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@1.1"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
 # Automate deployment, configuration, and upgrading
 brew "ansible"
 # Image format providing lossless and lossy compression for web images
@@ -51,12 +51,16 @@ brew "libtool"
 brew "unixodbc"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
+# GNU database manager
+brew "gdbm"
 # Core application library for C
 brew "glib"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # GNOME accessibility toolkit
 brew "atk"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Shell extension to jump to frequently used directories
 brew "autojump"
 # XML-based font configuration API for X Windows
@@ -71,6 +75,8 @@ brew "cairo"
 brew "harfbuzz"
 # Avro command-line tools and utilities
 brew "avro-tools"
+# Text processing system for reStructuredText
+brew "docutils"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -107,16 +113,18 @@ brew "flac"
 brew "libidn2"
 # Validating, recursive, caching DNS resolver
 brew "unbound", restart_service: true
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
 # Subtitle renderer for the ASS/SSA subtitle format
 brew "libass"
 # Vorbis General Audio Compression Codec
 brew "libvorbis"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Secure Reliable Transport
 brew "srt"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Cue sheet parser library for C
 brew "libcue"
 # Music player with an ncurses based interface
@@ -127,6 +135,8 @@ brew "ruby"
 brew "cocoapods"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
+# Utility that creates projects from templates
+brew "cookiecutter"
 # Configurable talking characters in ASCII art
 brew "cowsay"
 # Validate and define text-based and dynamic configuration
@@ -145,6 +155,12 @@ brew "elinks"
 brew "fd"
 # C routines to compute the Discrete Fourier Transform
 brew "fftw"
+# Multi-platform support library with a focus on asynchronous I/O
+brew "libuv"
+# Platform built on V8 to build network applications
+brew "node"
+# Firebase command-line tools
+brew "firebase-cli"
 # Collection of reusable C++ library artifacts developed at Facebook
 brew "folly"
 # Infamous electronic fortune-cookie generator
@@ -177,18 +193,20 @@ brew "gnupg"
 brew "go"
 # Log analyzer and interactive viewer for the Apache Webserver
 brew "goaccess"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # Fast linters runner for Go
 brew "golangci-lint"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
 # Image processing tools collection
 brew "graphicsmagick"
-# Framework for layout and rendering of i18n text
-brew "pango"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# GNU grep, egrep and fgrep
+brew "grep"
 # Kubernetes package manager
 brew "helm"
 # Command-line hex viewer
@@ -207,8 +225,8 @@ brew "hugo"
 brew "hyperfine"
 # Tool for managing apps on iOS devices
 brew "ideviceinstaller"
-# Tools and libraries to manipulate images in many formats
-brew "imagemagick"
+# Display an interface's bandwidth usage
+brew "iftop"
 # Install and debug iPhone apps from the command-line
 brew "ios-deploy"
 # Peer-to-peer hypermedia protocol
@@ -241,8 +259,6 @@ brew "libpq"
 brew "libraqm"
 # HTTP client/server library for GNOME
 brew "libsoup"
-# Multi-platform support library with a focus on asynchronous I/O
-brew "libuv"
 # GNOME XML library
 brew "libxml2"
 # C XSLT library for GNOME
@@ -251,8 +267,6 @@ brew "libxslt"
 brew "lzip"
 # Make/rake-like build tool using Go
 brew "mage"
-# Platform built on V8 to build network applications
-brew "node"
 # Easily convert Marp Markdown files into static HTML/CSS, PDF, PPT and images
 brew "marp-cli"
 # Java-based project management
@@ -263,6 +277,8 @@ brew "meson"
 brew "micro"
 # Terminal-based visual file manager
 brew "midnight-commander"
+# Run a Kubernetes cluster locally
+brew "minikube"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Move, copy, append, and link multiple files
@@ -292,13 +308,15 @@ brew "nnn"
 # Libraries for security-enabled client and server applications
 brew "nss"
 # Package for scientific computing with Python
-brew "numpy"
+brew "numpy", link: false
 # Manage multiple Node.js versions
 brew "nvm"
 # Seamless operability between C++11 and Python
 brew "pybind11"
 # Adds an OCR text layer to scanned PDF files
 brew "ocrmypdf"
+# Open source, general-purpose policy engine
+brew "opa"
 # Development kit for the Java programming language
 brew "openjdk@11"
 # Apache Parquet command-line tools and utilities
@@ -313,6 +331,8 @@ brew "pidcat"
 brew "pipenv"
 # Python package management tool
 brew "poetry"
+# Object-relational database system
+brew "postgresql@15", link: true
 # Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
 # Highly configurable GPL-licensed FTP server software
@@ -345,22 +365,34 @@ brew "semgrep"
 brew "sip"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
+# Launcher to analyze a project with SonarQube
+brew "sonar-scanner"
+# Manage code quality
+brew "sonarqube", restart_service: true
 # Tool to create intelligent and beautiful documentation
 brew "sphinx-doc"
+# A whitespace formatter for different query languages
+brew "sql-formatter"
 # Displays the differences between SQLite databases
 brew "sqldiff"
 # User interface to the TELNET protocol
 brew "telnet"
-# Tool to build, change, and version infrastructure
-brew "terraform"
 # Terraform State → Ansible Dynamic Inventory
 brew "terraform-inventory"
 # Enables extra languages support for Tesseract
 brew "tesseract-lang"
 # Executes SQL across text files
 brew "textql"
+# Terraform version manager inspired by rbenv
+brew "tfenv"
+# Linter for Terraform files
+brew "tflint"
+# Static analysis security scanner for your terraform code
+brew "tfsec"
 # Code-search similar to ack
 brew "the_silver_searcher"
+# Programmatically correct mistyped console commands
+brew "thefuck"
 # Simplified and community-driven man pages
 brew "tldr"
 # Terminal multiplexer
@@ -389,16 +421,22 @@ brew "wtfutil"
 brew "youtube-dl"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# Fork of youtube-dl with additional features and fixes
+brew "yt-dlp"
 # General-purpose lossless data-compression library
 brew "zlib"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# AWS Simple EC2 CLI is a tool that simplifies the process of launching, connecting and terminating an EC2 instance
+brew "aws/tap/aws-simple-ec2-cli"
 # Official Amazon AWS session manager plugin
 brew "dkanejs/aws-session-manager-plugin/aws-session-manager-plugin"
 # Deliver Go binaries as fast and easily as possible
 brew "goreleaser/tap/goreleaser"
 # Your dev tool to manage /etc/hosts like a pro
 brew "guumaster/tap/hostctl"
+# Packer
+brew "hashicorp/tap/packer"
 # A no sweat backup and restore tool for dynamodb
 brew "kishaningithub/tap/dynamodb-backup-restore"
 # Clone your dynamodb
@@ -419,12 +457,16 @@ brew "kishaningithub/tap/shopify-csv-download"
 brew "mike-engel/jwt-cli/jwt-cli"
 # Find credentials all over the place
 brew "trufflesecurity/trufflehog/trufflehog"
-# Steampipe exposes APIs and services as a high-performance relational database, giving you the ability to write SQL-based queries to explore, assess and report on dynamic data.
-brew "turbot/tap/steampipe"
 # Fast, multipurpose tool for AWS CloudWatch Logs
 brew "tylerbrock/saw/saw"
+# Generate Homebrew formulae for npm packages
+brew "zmwangx/npm-noob/noob"
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
+# Securely stores and accesses AWS credentials in a development environment
+cask "aws-vault"
+# Web browser focusing on privacy
+cask "brave-browser"
 # Managed desktop virtualization solution
 cask "citrix-workspace"
 # Draw.io is free online diagram software
@@ -437,6 +479,8 @@ cask "evernote"
 cask "ferdium"
 # Web browser
 cask "firefox"
+# UI toolkit for building applications for mobile, web and desktop
+cask "flutter"
 # Screen color temperature controller
 cask "flux"
 # Clipboard manager for developers
@@ -469,16 +513,22 @@ cask "libreoffice"
 cask "licecap"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# App to write, plan, collaborate, and get organized
+cask "notion"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Web browser
 cask "opera"
-# App wrapper for Postgres
-cask "postgres-unofficial"
 # IDE for professional Python development
 cask "pycharm"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Authentication software
 cask "securid"
+# Instant messaging application focusing on security
+cask "signal"
 # Team communication and collaboration software
 cask "slack"
 # System monitor for the menu bar
@@ -489,6 +539,8 @@ cask "thunderbird"
 cask "tor-browser"
 # Open-source BitTorrent client
 cask "transmission"
+# Development environment
+cask "vagrant"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
@@ -501,3 +553,5 @@ cask "xbar"
 cask "xquartz"
 # Video communication and virtual meeting platform
 cask "zoom"
+# Collect, organize, cite, and share research sources
+cask "zotero"

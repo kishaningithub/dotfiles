@@ -96,6 +96,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/opt/homebrew/bin:$PATH" # Solve chicken and egg problem of homebrew binary being not present in path
 export PATH="$(brew --prefix)/opt/openjdk@11/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -178,4 +180,14 @@ mkcd() {
     cd "${1}"
 }
 
+gsup() {
+  git branch --set-upstream-to=origin/$(git branch --show-current) $(git branch --show-current)
+}
+
 alias bupc='brew update && brew upgrade && brew cleanup'
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+eval $(thefuck --alias fix)

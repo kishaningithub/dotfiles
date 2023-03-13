@@ -15,6 +15,9 @@
 [init]
 	defaultBranch = main
 
+[core]
+	editor = code --wait
+
 # delta - config start - more info https://github.com/dandavison/delta
 
 [pager]
