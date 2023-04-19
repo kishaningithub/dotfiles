@@ -1,3 +1,6 @@
+[credential]
+	useHttpPath = true
+
 [user]
 	email = Kishan.Bhavanishankar@gilead.com
 

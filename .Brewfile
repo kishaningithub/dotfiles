@@ -95,8 +95,6 @@ brew "gcc"
 brew "tbb"
 # C++ library for large-scale optimization
 brew "ceres-solver"
-# Validate CloudFormation templates against the CloudFormation spec
-brew "cfn-lint"
 # Generate code for scanning Z-polyhedra
 brew "cloog"
 # CloudFormation Provider Development Toolkit
@@ -195,8 +193,6 @@ brew "go"
 brew "goaccess"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
-# Fast linters runner for Go
-brew "golangci-lint"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
 # Image processing tools collection
@@ -221,18 +217,20 @@ brew "httpstat"
 brew "httrack"
 # Configurable static site generator
 brew "hugo"
-# Command-line benchmarking tool
-brew "hyperfine"
 # Tool for managing apps on iOS devices
 brew "ideviceinstaller"
 # Display an interface's bandwidth usage
 brew "iftop"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
 # Install and debug iPhone apps from the command-line
 brew "ios-deploy"
 # Peer-to-peer hypermedia protocol
 brew "ipfs"
 # CLI wrapper for basic network utilities on macOS - ip command
 brew "iproute2mac"
+# Serializes the output of command-line tools to structured JSON output
+brew "jc"
 # Implementation of malloc emphasizing fragmentation avoidance
 brew "jemalloc"
 # Manage your Java environment
@@ -263,6 +261,8 @@ brew "libsoup"
 brew "libxml2"
 # C XSLT library for GNOME
 brew "libxslt"
+# Library for database change tracking
+brew "liquibase"
 # LZMA-based compression program similar to gzip or bzip2
 brew "lzip"
 # Make/rake-like build tool using Go
@@ -287,6 +287,14 @@ brew "mmv"
 brew "moreutils"
 # Library for a binary-based efficient data interchange format
 brew "msgpack"
+# CLI for MySQL with auto-completion and syntax highlighting
+brew "mycli"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
+# General-purpose lossless data-compression library
+brew "zlib"
+# Open source relational database management system
+brew "mysql", restart_service: true
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Search tool like grep and The Silver Searcher
@@ -332,13 +340,11 @@ brew "pipenv"
 # Python package management tool
 brew "poetry"
 # Object-relational database system
-brew "postgresql@15", link: true
+brew "postgresql@15", restart_service: true, link: true
 # Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
 # Highly configurable GPL-licensed FTP server software
 brew "proftpd", restart_service: true
-# Protocol buffers (Google's data interchange format)
-brew "protobuf"
 # Show ps output as a tree
 brew "pstree"
 # Monitor data's progress through a pipe
@@ -355,12 +361,16 @@ brew "quicktype"
 brew "rclone"
 # Standard unix software packaging tool
 brew "rpm"
+# Super S3 command-line tool
+brew "s4cmd"
 # Build tool for Scala projects
 brew "sbt"
 # JVM-based programming language
 brew "scala"
 # Easily detect and prevent bugs and anti-patterns in your codebase
 brew "semgrep"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
 # Tool to create Python bindings for C and C++ libraries
 brew "sip"
 # Prints a steam locomotive if you type sl instead of ls
@@ -368,7 +378,7 @@ brew "sl"
 # Launcher to analyze a project with SonarQube
 brew "sonar-scanner"
 # Manage code quality
-brew "sonarqube", restart_service: true
+brew "sonarqube"
 # Tool to create intelligent and beautiful documentation
 brew "sphinx-doc"
 # A whitespace formatter for different query languages
@@ -423,8 +433,6 @@ brew "youtube-dl"
 brew "yq"
 # Fork of youtube-dl with additional features and fixes
 brew "yt-dlp"
-# General-purpose lossless data-compression library
-brew "zlib"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
 # AWS Simple EC2 CLI is a tool that simplifies the process of launching, connecting and terminating an EC2 instance
@@ -469,6 +477,8 @@ cask "aws-vault"
 cask "brave-browser"
 # Managed desktop virtualization solution
 cask "citrix-workspace"
+# Tool to hide status bar icons
+cask "dozer"
 # Draw.io is free online diagram software
 cask "drawio"
 # Client for the Dropbox cloud storage service
@@ -499,6 +509,8 @@ cask "imageoptim"
 cask "inkscape"
 # Java IDE by JetBrains
 cask "intellij-idea"
+# IDE for Java development - community edition
+cask "intellij-idea-ce"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Standalone Java Decompiler GUI
@@ -511,6 +523,8 @@ cask "keepassxc"
 cask "libreoffice"
 # Animated screen capture application
 cask "licecap"
+# Privacy-first, open-source platform for knowledge sharing and management
+cask "logseq"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
 # Reverse proxy, secure introspectable tunnels to localhost
