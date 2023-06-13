@@ -18,5 +18,9 @@
         "key": "alt+cmd+g b",
         "command": "-gitlens.toggleFileBlame",
         "when": "editorTextFocus && config.gitlens.keymap == 'chorded' && gitlens:activeFileStatus =~ /blameable/"
+    },
+    {
+        "key": "shift+cmd+'",
+        "command": "workbench.action.toggleMaximizedPanel"
     }
 ]

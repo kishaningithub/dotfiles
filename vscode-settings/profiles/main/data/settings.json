@@ -90,5 +90,15 @@
     "xml.symbols.maxItemsComputed": 10000,
     "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "dart.hotReloadOnSave": "all",
+    "dart.flutterHotReloadOnSave": "all",
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+    "vscode-pets.petSize": "medium",
+    "vscode-pets.petType": "zappy",
+    "dart.openDevTools": "flutter",
+    "rust-analyzer.check.command": "clippy"
 }
