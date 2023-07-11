@@ -98,6 +98,7 @@ export PATH="$(brew --prefix)/opt/openjdk@11/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH="$HOME/.local_launchers:$PATH"
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -184,10 +185,50 @@ gsup() {
   git branch --set-upstream-to=origin/$(git branch --show-current) $(git branch --show-current)
 }
 
-alias bupc='brew update && brew upgrade && brew cleanup'
+assume-role() {
+  ROLE_ARN="${1}"
+  SESSION_NAME="${2}"
+
+  output=$(aws sts assume-role --role-arn "$ROLE_ARN" --role-session-name "$SESSION_NAME")
+  export AWS_ACCESS_KEY_ID=$(echo "$output" | jq -r '.Credentials.AccessKeyId')
+  export AWS_SECRET_ACCESS_KEY=$(echo "$output" | jq -r '.Credentials.SecretAccessKey')
+  export AWS_SESSION_TOKEN=$(echo "$output" | jq -r '.Credentials.SessionToken')
+
+  echo "Assumed IAM role '$ROLE_ARN' and exported temporary AWS credentials as environment variables."
+}
+
+sync-repos() {
+  ORG_NAME="${1}"
+  gh repo list "${ORG_NAME}" --json sshUrl --jq '.[] | .sshUrl' --limit 1000 | parallel git clone {}
+  ls -1 | parallel git -C {} pull --rebase
+}
+
+alias bupc='brew update && brew upgrade && brew cleanup && brew autoremove'
 
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 eval $(thefuck --alias fix)
+
+colima start --network-address
+# Making colima work with test containers
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
+## https://github.com/dizney/testcontainers-with-colima
+export TESTCONTAINERS_HOST_OVERRIDE="$(colima ls -j  | grep "address" | jq -r '.address')"
+
+. $(brew --prefix)/opt/asdf/libexec/asdf.sh
+
+
+mkdir -p ~/.local_launchers
+
+cat <<EOF > ~/.local_launchers/idea
+#!/usr/bin/env bash
+
+set -eu
+
+open -na "IntelliJ IDEA.app" --args "$@"
+EOF
+
+chmod +x ~/.local_launchers/idea
