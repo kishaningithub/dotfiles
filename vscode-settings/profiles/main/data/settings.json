@@ -12,7 +12,12 @@
         "**/.classpath": true,
         "**/.project": true,
         "**/.settings": true,
-        "**/.factorypath": true
+        "**/.factorypath": true,
+        "**/.trunk/*actions/": true,
+        "**/.trunk/*logs/": true,
+        "**/.trunk/*notifications/": true,
+        "**/.trunk/*out/": true,
+        "**/.trunk/*plugins/": true
     },
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
@@ -94,11 +99,31 @@
     "dart.hotReloadOnSave": "all",
     "dart.flutterHotReloadOnSave": "all",
     "[python]": {
-        "editor.formatOnType": true
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.python"
     },
     "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
     "vscode-pets.petSize": "medium",
     "vscode-pets.petType": "zappy",
     "dart.openDevTools": "flutter",
-    "rust-analyzer.check.command": "clippy"
+    "rust-analyzer.check.command": "clippy",
+    "workbench.startupEditor": "none",
+    "sonarlint.connectedMode.connections.sonarqube": [
+        {
+            "serverUrl": "http://localhost:9000",
+            "connectionId": "local-sonar-qube"
+        }
+    ],
+    "trunk.trunkGrayOutNonBlockingIssues": false,
+    "files.watcherExclude": {
+        "**/.trunk/*actions/": true,
+        "**/.trunk/*logs/": true,
+        "**/.trunk/*notifications/": true,
+        "**/.trunk/*out/": true,
+        "**/.trunk/*plugins/": true
+    },
+    "editor.defaultFormatter": "trunk.io",
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    }
 }
