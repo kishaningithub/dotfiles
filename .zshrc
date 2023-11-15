@@ -199,27 +199,36 @@ assume-role() {
 
 sync-repos() {
   ORG_NAME="${1}"
-  gh repo list "${ORG_NAME}" --json sshUrl --jq '.[] | .sshUrl' --limit 1000 | parallel git clone {}
-  ls -1 | parallel git -C {} pull --rebase
+  no_of_cpus=$(sysctl -n hw.ncpu)
+  gh repo list "${ORG_NAME}" --json sshUrl --jq '.[] | .sshUrl' --limit 1000 | xargs -I {} -P ${no_of_cpus} -n 1 git clone {}
+  ls -1 | xargs -I {} -P ${no_of_cpus} -n 1 git -C {} pull --rebase --autostash
 }
 
 alias bupc='brew update && brew upgrade && brew cleanup && brew autoremove'
 
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+if command -v pyenv &> /dev/null; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+  unset PYENV_VERSION
+fi
 
-eval $(thefuck --alias fix)
+if command -v thefuck &> /dev/null; then
+  eval $(thefuck --alias fix)
+fi
 
-colima start --network-address
-# Making colima work with test containers
-export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
-export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
-## https://github.com/dizney/testcontainers-with-colima
-export TESTCONTAINERS_HOST_OVERRIDE="$(colima ls -j  | grep "address" | jq -r '.address')"
+if command -v colima &> /dev/null; then
+  colima start --network-address
+  # Making colima work with test containers
+  export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+  export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
+  ## https://github.com/dizney/testcontainers-with-colima
+  export TESTCONTAINERS_HOST_OVERRIDE="$(colima ls -j  | grep "address" | jq -r '.address')"
+fi
 
-. $(brew --prefix)/opt/asdf/libexec/asdf.sh
-
+if command -v asdf &> /dev/null; then
+  . $(brew --prefix)/opt/asdf/libexec/asdf.sh
+fi
 
 mkdir -p ~/.local_launchers
 
@@ -232,3 +241,11 @@ open -na "IntelliJ IDEA.app" --args "$@"
 EOF
 
 chmod +x ~/.local_launchers/idea
+
+if command -v pkgx &> /dev/null; then
+  source <(pkgx --shellcode)  #docs.pkgx.sh/shellcode
+fi
+
+if command -v rtx &> /dev/null; then
+  eval "$(rtx activate zsh)"
+fi
