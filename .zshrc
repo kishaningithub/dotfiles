@@ -99,6 +99,7 @@ export PATH="$HOME/go/bin:$PATH"
 export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="$HOME/.local_launchers:$PATH"
+export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -142,8 +143,8 @@ alias gcx="gco \$(git branch -a | sed -E 's/remotes\/([a-zA-Z-]*\/)//' | rg -v '
 # >>> talisman >>>
 ## Kishan - Git hook template is setup in ~/.git-template/hooks/pre-commit
 # Below environment variables should not be modified unless you know what you are doing
-export TALISMAN_HOME=~/.talisman/bin
-alias talisman=$TALISMAN_HOME/talisman_darwin_amd64
+# export TALISMAN_HOME=~/.talisman/bin
+# alias talisman=$TALISMAN_HOME/talisman_darwin_amd64
 # <<< talisman <<<
 
 # Dir env
@@ -204,7 +205,7 @@ sync-repos() {
   ls -1 | xargs -I {} -P ${no_of_cpus} -n 1 git -C {} pull --rebase --autostash
 }
 
-alias bupc='brew update && brew upgrade && brew cleanup && brew autoremove'
+alias bupc='brew update && brew upgrade && mas upgrade && brew cleanup && brew autoremove'
 
 if command -v pyenv &> /dev/null; then
   export PYENV_ROOT="$HOME/.pyenv"

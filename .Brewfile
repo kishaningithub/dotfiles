@@ -26,8 +26,6 @@ tap "tylerbrock/saw"
 tap "zmwangx/npm-noob"
 # Portable ASCII art graphics library
 brew "aalib"
-# Run your GitHub Actions locally
-brew "act"
 # Static checker for GitHub Actions workflow files
 brew "actionlint"
 # Simple, modern, secure file encryption
@@ -40,18 +38,20 @@ brew "gettext"
 brew "aria2"
 # Portable library for importing many well-known 3D model formats
 brew "assimp"
-# GNU database manager
-brew "gdbm"
 # Core application library for C
 brew "glib"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# GNOME accessibility toolkit
-brew "atk"
+# X.Org: Core X11 protocol client library
+brew "libx11"
+# Manage compile and link flags for libraries
+brew "pkg-config"
+# Protocol definitions and daemon for D-Bus at-spi
+brew "at-spi2-core"
 # Automatic configure script builder
 brew "autoconf"
+# GNU database manager
+brew "gdbm"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
 # Shell extension to jump to frequently used directories
@@ -60,10 +60,6 @@ brew "autojump"
 brew "automake"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
-# X.Org: Core X11 protocol client library
-brew "libx11"
-# Manage compile and link flags for libraries
-brew "pkg-config"
 # Vector graphics library with cross-device output support
 brew "cairo"
 # OpenType text shaping engine
@@ -74,10 +70,6 @@ brew "avro-tools"
 brew "docutils"
 # Official Amazon AWS command-line interface
 brew "awscli"
-# YAML Parser
-brew "libyaml"
-# Security-oriented static analyser for Python code
-brew "bandit"
 # Regular expressions library
 brew "oniguruma"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -90,12 +82,6 @@ brew "bfg"
 brew "bmon"
 # Pipe HTML to a browser
 brew "browser"
-# GNU compiler collection
-brew "gcc"
-# Rich and complete approach to parallelism in C++
-brew "tbb"
-# C++ library for large-scale optimization
-brew "ceres-solver"
 # Generate code for scanning Z-polyhedra
 brew "cloog"
 # Cross-platform make
@@ -126,26 +112,24 @@ brew "ffmpeg"
 brew "libcue"
 # Music player with an ncurses based interface
 brew "cmus"
+# YAML Parser
+brew "libyaml"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Dependency manager for Cocoa projects
 brew "cocoapods"
-# Emulator for x86 and PowerPC
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
+# Generic machine emulator and virtualizer
 brew "qemu"
 # Linux virtual machines
 brew "lima"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
-# Python composable command-line interface toolkit
-brew "python-click"
-# Utility that creates projects from templates
-brew "cookiecutter"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Configurable talking characters in ASCII art
 brew "cowsay"
-# Validate and define text-based and dynamic configuration
-brew "cue"
 # Load/unload environment variables based on $PWD
 brew "direnv"
 # Tool for exploring each layer in a docker image
@@ -160,12 +144,12 @@ brew "docker-compose"
 brew "elinks"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# C routines to compute the Discrete Fourier Transform
-brew "fftw"
 # Infamous electronic fortune-cookie generator
 brew "fortune"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# GNU compiler collection
+brew "gcc"
 # Toolkit for image loading and pixel buffer manipulation
 brew "gdk-pixbuf"
 # GitHub command-line tool
@@ -180,8 +164,6 @@ brew "gsettings-desktop-schemas"
 brew "glib-networking"
 # Render markdown on the CLI
 brew "glow"
-# Full-Featured Open-Source Framework for Image Processing
-brew "gmic"
 # Common error values for all GnuPG components
 brew "libgpg-error"
 # Cryptographic library based on the code from GnuPG
@@ -240,8 +222,6 @@ brew "jmeter"
 brew "jq"
 # Generic command-line non-JVM Apache Kafka producer and consumer
 brew "kcat"
-# Build and deploy Go applications on Kubernetes
-brew "ko"
 # Network authentication protocol
 brew "krb5"
 # Simple terminal UI for git commands
@@ -258,8 +238,6 @@ brew "libuv"
 brew "libxml2"
 # C XSLT library for GNOME
 brew "libxslt"
-# Library for database change tracking
-brew "liquibase"
 # LZMA-based compression program similar to gzip or bzip2
 brew "lzip"
 # Make/rake-like build tool using Go
@@ -270,6 +248,8 @@ brew "mailcatcher"
 brew "node"
 # Easily convert Marp Markdown files into static HTML/CSS, PDF, PPT and images
 brew "marp-cli"
+# Mac App Store command-line interface
+brew "mas"
 # Java-based project management
 brew "maven"
 # Fast and user friendly build system
@@ -310,14 +290,12 @@ brew "nghttp2"
 brew "nnn"
 # Libraries for security-enabled client and server applications
 brew "nss"
-# Package for scientific computing with Python
-brew "numpy", link: false
 # Manage multiple Node.js versions
 brew "nvm"
+# Python composable command-line interface toolkit
+brew "python-click"
 # Okta authentication for awscli
 brew "okta-awscli"
-# Open source, general-purpose policy engine
-brew "opa"
 # Development kit for the Java programming language
 brew "openjdk@11"
 # Apache Parquet command-line tools and utilities
@@ -364,16 +342,14 @@ brew "shellcheck"
 brew "sl"
 # Launcher to analyze a project with SonarQube
 brew "sonar-scanner"
-# Manage code quality
-brew "sonarqube"
 # Tool to create intelligent and beautiful documentation
 brew "sphinx-doc"
-# A whitespace formatter for different query languages
-brew "sql-formatter"
 # Displays the differences between SQLite databases
 brew "sqldiff"
 # Tool to detect and prevent secrets from getting checked in
 brew "talisman"
+# Rich and complete approach to parallelism in C++
+brew "tbb"
 # User interface to the TELNET protocol
 brew "telnet"
 # Tool to generate documentation from Terraform modules
@@ -396,8 +372,6 @@ brew "thefuck"
 brew "tldr"
 # Terminal multiplexer
 brew "tmux"
-# Generic Python virtualenv management and test command-line tool
-brew "tox"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # CLI time zone visualizer
@@ -414,8 +388,6 @@ brew "watch"
 brew "wget"
 # Personal information dashboard for your terminal
 brew "wtfutil"
-# Download YouTube videos from the command-line
-brew "youtube-dl"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # Fork of youtube-dl with additional features and fixes
@@ -430,8 +402,6 @@ brew "dkanejs/aws-session-manager-plugin/aws-session-manager-plugin"
 brew "goreleaser/tap/goreleaser"
 # Your dev tool to manage /etc/hosts like a pro
 brew "guumaster/tap/hostctl"
-# Packer
-brew "hashicorp/tap/packer"
 # A no sweat backup and restore tool for dynamodb
 brew "kishaningithub/tap/dynamodb-backup-restore"
 # Clone your dynamodb
@@ -472,8 +442,6 @@ cask "android-studio"
 cask "aws-vault"
 # Web browser focusing on privacy
 cask "brave-browser"
-# Managed desktop virtualization solution
-cask "citrix-workspace"
 # Voice and text chat software
 cask "discord"
 # Online diagram software
@@ -486,8 +454,6 @@ cask "evernote"
 cask "ferdium"
 # Web browser
 cask "firefox"
-# UI toolkit for building applications for mobile, web and desktop
-cask "flutter"
 # Screen color temperature controller
 cask "flux"
 # Clipboard manager for developers
@@ -518,16 +484,14 @@ cask "keepassxc"
 cask "libreoffice"
 # Animated screen capture application
 cask "licecap"
+# Web browser
+cask "microsoft-edge"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # App to write, plan, collaborate, and get organized
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Web browser
-cask "opera"
-# Collaboration platform for API development
-cask "postman"
 # IDE for professional Python development
 cask "pycharm"
 # Move and resize windows using keyboard shortcuts or snap areas
@@ -536,8 +500,6 @@ cask "rectangle"
 cask "securid"
 # Instant messaging application focusing on security
 cask "signal"
-# Team communication and collaboration software
-cask "slack"
 # Music streaming service
 cask "spotify"
 # System monitor for the menu bar
@@ -550,6 +512,8 @@ cask "tor-browser"
 cask "transmission"
 # Open-source code editor
 cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
 # Binary releases of VS Code without MS branding/telemetry/licensing
 cask "vscodium"
 # View output from scripts in the menu bar
@@ -558,8 +522,29 @@ cask "xbar"
 cask "xquartz"
 # Video communication and virtual meeting platform
 cask "zoom"
-# Collect, organize, cite, and share research sources
-cask "zotero"
+mas "Bear", id: 1091189122
+mas "CollageFactory Free", id: 620343399
+mas "Easy Collage", id: 1552589734
+mas "Endel", id: 1346247457
+mas "GarageBand", id: 682658836
+mas "Goodnotes", id: 1444383602
+mas "HP Easy Scan", id: 967004861
+mas "HP Smart", id: 1474276998
+mas "iBar", id: 6443843900
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "Numbers", id: 409203825
+mas "One Thing", id: 1604176982
+mas "Pages", id: 409201541
+mas "Pandan", id: 1569600264
+mas "Pomo Timer", id: 1447569061
+mas "QR Journal", id: 483820530
+mas "Tot", id: 1491071483
+mas "Xcode", id: 497799835
+mas "Xmind", id: 1327661892
 vscode "bradlc.vscode-tailwindcss"
 vscode "brody715.vscode-cuelang"
 vscode "charliermarsh.ruff"
@@ -574,6 +559,7 @@ vscode "dvirtz.parquet-viewer"
 vscode "eamodio.gitlens"
 vscode "EditorConfig.EditorConfig"
 vscode "esbenp.prettier-vscode"
+vscode "GitHub.remotehub"
 vscode "golang.go"
 vscode "GraphQL.vscode-graphql"
 vscode "GraphQL.vscode-graphql-execution"
@@ -603,9 +589,11 @@ vscode "ms-python.python"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode.azure-repos"
 vscode "ms-vscode.makefile-tools"
 vscode "ms-vscode.powershell"
 vscode "ms-vscode.remote-explorer"
+vscode "ms-vscode.remote-repositories"
 vscode "mtxr.sqltools"
 vscode "mtxr.sqltools-driver-mysql"
 vscode "mtxr.sqltools-driver-pg"
