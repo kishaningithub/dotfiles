@@ -99,7 +99,9 @@ export PATH="$HOME/go/bin:$PATH"
 export PATH="$(brew --prefix)/opt/grep/libexec/gnubin:$PATH"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="$HOME/.local_launchers:$PATH"
-export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH="$(brew --prefix)/opt/ruby/bin:$PATH"
+export PATH="$(brew --prefix)/opt/sqlite/bin:$PATH"
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
@@ -125,6 +127,7 @@ alias ssm_stg='aws ssm get-parameters-by-path --path /config/$(basename `pwd`)_s
 alias ssm_stg_list='aws ssm get-parameters-by-path --path /config/$(basename `pwd`)_stg --recursive | jq -r '\''.Parameters[] | "\(.Name) : \(.Value)"'\'''
 
 ulimit -S -n 9999
+
 ssh-add --apple-use-keychain ~/.ssh/id_rsa
 ssh-add --apple-use-keychain ~/.ssh/gilead_rsa
 
@@ -205,7 +208,7 @@ sync-repos() {
   ls -1 | xargs -I {} -P ${no_of_cpus} -n 1 git -C {} pull --rebase --autostash
 }
 
-alias bupc='brew update && brew upgrade && mas upgrade && brew cleanup && brew autoremove'
+alias bupc='brew update && brew upgrade && brew cleanup && brew autoremove'
 
 if command -v pyenv &> /dev/null; then
   export PYENV_ROOT="$HOME/.pyenv"
@@ -219,7 +222,7 @@ if command -v thefuck &> /dev/null; then
 fi
 
 if command -v colima &> /dev/null; then
-  colima start --network-address
+  colima start --network-address --disk 10
   # Making colima work with test containers
   export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
   export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
@@ -243,6 +246,8 @@ EOF
 
 chmod +x ~/.local_launchers/idea
 
+
+## pkgx start
 if command -v pkgx &> /dev/null; then
   source <(pkgx --shellcode)  #docs.pkgx.sh/shellcode
 fi
@@ -250,3 +255,8 @@ fi
 if command -v rtx &> /dev/null; then
   eval "$(rtx activate zsh)"
 fi
+
+# if command -v dev &> /dev/null; then
+#  dev off && dev
+# fi
+## pkgx end
