@@ -6,7 +6,8 @@
 
 # Note: Even though this will show up twice in `git config -l` - it will still be overridden based on the order of the includeIf lines below (last matching configuration wins). Utility subcommand to find out which config wins: `git who`
 [includeIf "gitdir/i:~/"]
-  path = ~/.gitconfig-oss.inc
+  path = ~/.gitconfig-personal.inc
+
 [advice]
   statusHints = true
 [alias]
@@ -228,9 +229,11 @@
   symlinks = false
   untrackedCache = true
   whitespace = fix
+[credential]
+  helper = osxkeychain
 [diff]
   algorithm = histogram
-  colorMoved = plain
+  colorMoved = default
   compactionHeuristic = true
   mnemonicPrefix = true
   renameLimit = 1000
@@ -280,7 +283,7 @@
 [http]
   postBuffer = 786432000
 [init]
-  defaultBranch = master
+  defaultBranch = main
 [interactive]
   diffFilter = diff-so-fancy --patch
 [maintenance]
@@ -291,7 +294,7 @@
   # abbrevCommit = true
 [merge]
   autoStash = true
-  # conflictStyle = diff3
+  conflictstyle = diff3
   defaultToUpstream = true
   ff = only
   renameLimit = 15000
@@ -301,6 +304,7 @@
 [pager]
   # Note: The '--pattern' switch sets some pre-search terms, but also scrolls to fill the whole console for single line change - which I dont like.
   diff = diff-so-fancy | less --tabs=2 -RFX  # --pattern '^(Date|added|deleted|modified|renamed): '    # windows
+  log = false
 [pull]
   autoStash = true
   rebase = true
@@ -339,5 +343,4 @@
   fsckObjects = false
 [user]
   useConfigOnly = true
-[oh-my-zsh]
-	hide-status = 1
+  name = Kishan B
